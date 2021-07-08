@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Snake ZXC </title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        #canvas {
+            display: flex;
+            justify-content: center;
+            margin: auto;
+        }
+        .modal {
+            display: none;
+        }
+        .modal--visible {
+            display: flex;
+            border-radius: 6px;
+            background-color: red;
+            height: 70px;
+            width: 150px;
+            position: absolute;
+            z-index: 5;
+        }
+        .reset-game{
+            z-index: 6;
+        }
+        body {
+                background-image: url(img/bc-body-2.jpg);
+            }
+        
+            .container {
+                background-image: url(img/bc-body.jpg);
+                background-position: center;
+                position: relative;
+            }
+        
+            body::after {
+                content: '';
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background-color: rgba(0, 0, 0, .5);
+                z-index: 0;
+            }
+        
+            .game {
+                display: flex;
+                justify-content: center;
+            }
+        
+            #canvas {
+                z-index: 3;
+                border-radius: 5px;
+                -webkit-box-shadow: 0px 2px 51px 2px rgba(255, 38, 17, 0.34);
+                -moz-box-shadow: 0px 2px 51px 2px rgba(255, 38, 17, 0.34);
+                box-shadow: 0px 2px 51px 2px rgba(255, 38, 17, 0.34);
+            }
+
+            #cat-dance {
+                position: absolute;
+                right: 20px;
+                bottom: 20px;
+                z-index: 2;
+            }
+        
+            #zxc-dance {
+                position: absolute;
+                left: 20px;
+                bottom: 20px;
+                z-index: 2;
+            }
+        
+            #zxc-sad {
+                position: absolute;
+                top: 20px;
+                left: 20px;
+                z-index: 2;
+            }
+        
+            #zxc-angry {
+                position: absolute;
+                top: 20px;
+                right: 20px;
+                z-index: 2;
+                width: 350px;
+            }
+            .exit {
+                position: absolute;
+                display: flex;
+                bottom: 10px;
+                z-index: 5;
+                left: 50%;
+                transform: translateX(-50%);
+                   
+            }
+            .exitBtn {
+                z-index: 5;
+                box-shadow: 0px 2px 51px 2px rgb(255 38 17 / 34%);
+                padding: 0;
+                background-color: red;
+                border-radius: 4px;
+                border: none;
+                background: linear-gradient(90deg, rgba(255,15,15,1) 0%, rgba(158,0,255,1) 100%);    
+                transition: 500ms;
+                
+            }
+            .exitBtn-link {
+                text-decoration: none;
+                color: #fff;
+                padding: 3px 10px;
+                margin-right: 10px;
+                
+            }  
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+    
+        <div class="game">
+            <canvas id="canvas" width="608px" height="608px"> </canvas>
+    
+        </div>
+    
+        <img id="cat-dance" src="gif/cat-dance.gif" alt="#">
+        <img id="zxc-dance" src="gif/zxc-dance.gif" alt="#">
+        <img id="zxc-angry" src="gif/zxc-angry.gif" alt="#">
+        <img id="zxc-sad" src="gif/zxc-sad.gif" alt="#">
+
+        <div class="exit">
+        
+            <button class="exitBtn">
+                <a href="../index.html" class="exitBtn-link">menu</a>
+                <a href="snake.html" class="exitBtn-link">reset</a>
+            </button>
+        
+        </div>
+    </div>
+    
+
+    <div class="modal">
+        <div class="reset-game">
+            RESET
+        </div>
+    </div>
+
+    <script src="js/game.js"></script>
+</body>
+</html>

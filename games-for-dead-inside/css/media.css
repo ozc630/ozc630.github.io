@@ -1,0 +1,89 @@
+.mySwiper {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .gifs__item {
+    margin: 0 10px;
+  }
+  .gifs {
+    top: 32%;
+  }
+  .game-links {
+    flex-direction: column;
+  }
+  #myBtn {
+    width: 80%;
+    text-align: center;
+    height: 50px;
+    margin-bottom: 15px;
+  }
+  .content {
+    height: 45%;
+  }
+}
+@media (max-width: 479px) {
+  .gifs {
+    display: none;
+  }
+  .content-text__info {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    text-align: center;
+  }
+  .contentUp__link {
+    position: initial;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 100%;
+  }
+  .contentUp {
+    flex-direction: column;
+    align-items: center;
+  }
+  #myBtn {
+    width: 50%;
+    text-align: center;
+    height: 50px;
+    margin-bottom: 15px;
+  }
+  .content {
+    height: 55%;
+  }
+  .mySwiper {
+    display: flex;
+    position: absolute;
+    top: 17.5%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .swiper-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+@media (max-width: 322px) {
+  .content-text__info {
+    width: 40%;
+  }
+  #myBtn {
+    width: 40%;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .gifs__item {
+    width: 130px;
+    height: 130px;
+  }
+  .gifs__item:hover {
+    width: 140px;
+    height: 140px;
+  }
+}
+/* @media (max-width: 991px) {
+} */

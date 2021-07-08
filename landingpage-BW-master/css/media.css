@@ -1,0 +1,46 @@
+span {
+  text-align: center;
+}
+@media (max-width: 1200px) {
+  .about-us__card {
+    max-width: 450px;
+  }
+}
+@media (max-width: 992px) {
+  .about-us__card {
+    max-width: 330px;
+  }
+  .services-bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact-us__form {
+    max-width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .contact-us__bottom {
+    width: 100%;
+  }
+  .team-bottom {
+    flex-direction: column;
+  }
+  .team-card {
+    margin-bottom: 50px;
+  }
+  .about-us-cards {
+    justify-content: center;
+  }
+}
+@media (max-width: 479px) {
+  .contact-us-bottom {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact-us-bottom__contact {
+    margin-bottom: 50px;
+  }
+}

@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onetap</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="/img/onetap.ico" type="img/x-icon">
+
+    <!-- bootstrap -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- font Quantico -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header class="header" id="top">
+
+        <div class="container header-container">
+
+            <a href="index.html" class=""><img src="https://www.onetap.com/img/onetap.svg" alt="onetap: icon"
+                    class="header__onetap-logo"></a>
+            
+            <div class="header-link">
+
+                <a href="forums.html" class="header-link__forums">
+            
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-dots"
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M5 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
+                        <path
+                            d="m2.165 15.803.02-.004c1.83-.363 2.948-.842 3.468-1.105A9.06 9.06 0 0 0 8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6a10.437 10.437 0 0 1-.524 2.318l-.003.011a10.722 10.722 0 0 1-.244.637c-.079.186.074.394.273.362a21.673 21.673 0 0 0 .693-.125zm.8-3.108a1 1 0 0 0-.287-.801C1.618 10.83 1 9.468 1 8c0-3.192 3.004-6 7-6s7 2.808 7 6c0 3.193-3.004 6-7 6a8.06 8.06 0 0 1-2.088-.272 1 1 0 0 0-.711.074c-.387.196-1.24.57-2.634.893a10.97 10.97 0 0 0 .398-2z" />
+                    </svg>
+                    <span class="header-link__text">Forums</span>
+                </a>
+            
+                <a href="#" class="header-link__media">
+            
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-camera"
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M15 12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h1.172a3 3 0 0 0 2.12-.879l.83-.828A1 1 0 0 1 6.827 3h2.344a1 1 0 0 1 .707.293l.828.828A3 3 0 0 0 12.828 5H14a1 1 0 0 1 1 1v6zM2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4H2z" />
+                        <path
+                            d="M8 11a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5zm0 1a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7zM3 6.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0z" />
+                    </svg>
+                    <span class="header-link__text">Media</span>
+                </a>
+            
+                <a href="#" class="header-link__members">
+            
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-people"
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0zM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816zM4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275zM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4z" />
+                    </svg>
+                    <span class="header-link__text">Members</span>
+                </a>
+
+            </div>
+            
+            <div class="header-get">
+            
+                <!-- <a href="#">Log in</a> -->
+            
+                <a href="#" class="get-onetap"> get onetap </a>
+            
+                <!-- <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search"
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                    </svg>
+                </a> -->
+            </div>
+
+        </div>
+
+    </header>
+
+    <section class="content-swiper">
+
+        <div class="content-swiper-container">
+
+            <div class="swiper-container mySwiper">
+                <div class="swiper-wrapper">
+            
+                    <div class="swiper-slide swiper-slide__content-swiper">
+            
+                        <div class="content-swiper__bc-image"> <img src="img/content-swiper/1.jpg" alt="1">
+                        </div>
+            
+                    
+                        <div class="container content-swiper__date-container">
+                            <div class="content-swiper__date">
+                                <span class="content-swiper__name">
+                                    ONETAP CSGO
+                                </span>
+                            
+                                <span class="content-swiper__info">
+                                    Hundreds of features such as Aimbot, Wallhack, and Anti-Cheat Protection. Onetap is the best cheat
+                                    available for CSGO.
+                                </span>
+                            
+                                <a href="#" class="get-onetap"> get onetap </a>
+                            </div>
+                        </div>
+            
+                    </div>
+                    
+                    <div class="swiper-slide swiper-slide__content-swiper">
+                    
+                        <div class="content-swiper__bc-image"> <img src="img/content-swiper/2.jpg" alt="1">
+                        </div>
+                    
+                    
+                        <div class="container content-swiper__date-container">
+                            <div class="content-swiper__date">
+                                <span class="content-swiper__name">
+                                    UNDETECTED CHEATS
+                                </span>
+                    
+                                <span class="content-swiper__info">
+                                    Enhance your gameplay with undetected CSGO cheats and more from Onetap.
+                                </span>
+                    
+                                <a href="#" class="get-onetap"> get onetap </a>
+                            </div>
+                        </div>
+                    
+                    </div>
+
+                    <div class="swiper-slide swiper-slide__content-swiper">
+                    
+                        <div class="content-swiper__bc-image"> <img src="img/content-swiper/3.jpg" alt="1">
+                        </div>
+                    
+                    
+                        <div class="container content-swiper__date-container">
+                            <div class="content-swiper__date">
+                                <span class="content-swiper__name">
+                                    LEGIT & RAGE HACKS
+                                </span>
+                    
+                                <span class="content-swiper__info">
+                                    Onetap will help you dominate in-game enemies with safe legit and rage hacks.
+                                </span>
+                    
+                                <a href="#" class="get-onetap"> get onetap </a>
+                            </div>
+                        </div>
+                    
+                    </div>
+
+                </div>
+            
+                <div class="content-swiper__buttons">
+                    <div>
+                        <svg class="swiper-button-next swiper-button-next__content-swiper bi bi-arrow-right-square"
+                            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm4.5 5.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z" />
+                        </svg>
+                    </div>
+                    <div>
+                        <svg class="swiper-button-prev swiper-button-prev__content-swiper bi bi-arrow-left-square"
+                            xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm11.5 5.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z" />
+                        </svg>
+                    </div>
+                </div>
+            
+            
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="features">
+
+        <div class="container">
+
+            <span class="features__onetap-features">
+                Onetap Features
+            </span>
+
+            <img src="img/skull-unmasked.png" alt="#" class="features__bc-img">
+
+            <img src="img/features/onetap-Flair1.svg" alt="#" class="features__bc-flair1">
+            <img src="img/features/onetap-Flair2.svg" alt="#" class="features__bc-flair2">
+            
+            <div class="features-function">
+
+                <div class="features-function__aim">
+
+                    <div class="features-function__aim-icon">
+                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="crosshairs"
+                            class="svg-inline--fa fa-crosshairs fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path fill="currentColor"
+                                d="M500 224h-30.364C455.724 130.325 381.675 56.276 288 42.364V12c0-6.627-5.373-12-12-12h-40c-6.627 0-12 5.373-12 12v30.364C130.325 56.276 56.276 130.325 42.364 224H12c-6.627 0-12 5.373-12 12v40c0 6.627 5.373 12 12 12h30.364C56.276 381.675 130.325 455.724 224 469.636V500c0 6.627 5.373 12 12 12h40c6.627 0 12-5.373 12-12v-30.364C381.675 455.724 455.724 381.675 469.636 288H500c6.627 0 12-5.373 12-12v-40c0-6.627-5.373-12-12-12zM288 404.634V364c0-6.627-5.373-12-12-12h-40c-6.627 0-12 5.373-12 12v40.634C165.826 392.232 119.783 346.243 107.366 288H148c6.627 0 12-5.373 12-12v-40c0-6.627-5.373-12-12-12h-40.634C119.768 165.826 165.757 119.783 224 107.366V148c0 6.627 5.373 12 12 12h40c6.627 0 12-5.373 12-12v-40.634C346.174 119.768 392.217 165.757 404.634 224H364c-6.627 0-12 5.373-12 12v40c0 6.627 5.373 12 12 12h40.634C392.232 346.174 346.243 392.217 288 404.634zM288 256c0 17.673-14.327 32-32 32s-32-14.327-32-32c0-17.673 14.327-32 32-32s32 14.327 32 32z">
+                            </path>
+                        </svg>
+                    </div>
+
+                    <span class="features-function__aim-name">
+                        Aimbot
+                    </span>
+
+                    <span class="features-function__aim-info">Legit aim assist, rage aimbot, backtrack, speed customization, trigger bot and magnet, silent aimbot, and more…</span>
+                </div>
+
+                <div class="features-function__wh">
+                
+                    <div class="features-function__wh-icon">
+                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bahai" class="svg-inline--fa fa-bahai fa-w-16"
+                            role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path fill="currentColor"
+                                d="M496.25 202.52l-110-15.44 41.82-104.34c6.67-16.64-11.6-32.18-26.59-22.63L307.44 120 273.35 12.82C270.64 4.27 263.32 0 256 0c-7.32 0-14.64 4.27-17.35 12.82l-34.09 107.19-94.04-59.89c-14.99-9.55-33.25 5.99-26.59 22.63l41.82 104.34-110 15.43c-17.54 2.46-21.68 26.27-6.03 34.67l98.16 52.66-74.48 83.54c-10.92 12.25-1.72 30.93 13.29 30.93 1.31 0 2.67-.14 4.07-.45l108.57-23.65-4.11 112.55c-.43 11.65 8.87 19.22 18.41 19.22 5.15 0 10.39-2.21 14.2-7.18l68.18-88.9 68.18 88.9c3.81 4.97 9.04 7.18 14.2 7.18 9.54 0 18.84-7.57 18.41-19.22l-4.11-112.55 108.57 23.65c17.36 3.76 29.21-17.2 17.35-30.49l-74.48-83.54 98.16-52.66c15.64-8.39 11.5-32.2-6.04-34.66zM338.51 311.68l-51.89-11.3 1.97 53.79L256 311.68l-32.59 42.49 1.96-53.79-51.89 11.3 35.6-39.93-46.92-25.17 52.57-7.38-19.99-49.87 44.95 28.62L256 166.72l16.29 51.23 44.95-28.62-19.99 49.87 52.57 7.38-46.92 25.17 35.61 39.93z">
+                            </path>
+                        </svg>
+                    </div>
+                
+                    <span class="features-function__wh-name">
+                        Wallhack
+                    </span>
+                
+                    <span class="features-function__wh-info">Player ESP, Weapon ESP, Bomb ESP, Grenade ESP, Entity ESP, Wallhack, Player Chams, Radar Hack, and a lot more...</span>
+                </div>
+
+                <div class="features-function__performance">
+                
+                    <div class="features-function__performance-icon">
+                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="running"
+                            class="svg-inline--fa fa-running fa-w-13" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 416 512">
+                            <path fill="currentColor"
+                                d="M272 96c26.51 0 48-21.49 48-48S298.51 0 272 0s-48 21.49-48 48 21.49 48 48 48zM113.69 317.47l-14.8 34.52H32c-17.67 0-32 14.33-32 32s14.33 32 32 32h77.45c19.25 0 36.58-11.44 44.11-29.09l8.79-20.52-10.67-6.3c-17.32-10.23-30.06-25.37-37.99-42.61zM384 223.99h-44.03l-26.06-53.25c-12.5-25.55-35.45-44.23-61.78-50.94l-71.08-21.14c-28.3-6.8-57.77-.55-80.84 17.14l-39.67 30.41c-14.03 10.75-16.69 30.83-5.92 44.86s30.84 16.66 44.86 5.92l39.69-30.41c7.67-5.89 17.44-8 25.27-6.14l14.7 4.37-37.46 87.39c-12.62 29.48-1.31 64.01 26.3 80.31l84.98 50.17-27.47 87.73c-5.28 16.86 4.11 34.81 20.97 40.09 3.19 1 6.41 1.48 9.58 1.48 13.61 0 26.23-8.77 30.52-22.45l31.64-101.06c5.91-20.77-2.89-43.08-21.64-54.39l-61.24-36.14 31.31-78.28 20.27 41.43c8 16.34 24.92 26.89 43.11 26.89H384c17.67 0 32-14.33 32-32s-14.33-31.99-32-31.99z">
+                            </path>
+                        </svg>
+                    </div>
+                
+                    <span class="features-function__performance-name">
+                        Performance
+                    </span>
+                
+                    <span class="features-function__performance-info">Disable smoke, disable flash, disable fog, disable shadows, disable blood, disable teammate rendering, watermark, and
+                    more…</span>
+                </div>
+
+            </div>
+
+        </div>
+        
+    </section>
+
+    <section class="more-features">
+        <div class="container">
+
+            <img src="img/features/onetap-Flair1.svg" alt="#" class="more-features__bc-flair1">
+            <img src="img/features/onetap-Flair2.svg" alt="#" class="more-features__bc-flair2">
+
+            <div class="more-features-info">
+                <span class="more-features-info__name"> MORE onetap FEATURES</span>
+                <span class="more-features-info__info">Hundreds of features, guaranteed to work with any playing style.</span>
+            </div>
+
+            <div class="more-features-function">
+            
+                <div class="more-features-function__top">
+
+                    <div class="more-features-function__cards">
+                    
+                        <span class="more-features-function__name">
+                            Visuals
+                        </span>
+                    
+                        <div class="more-features__underline-flair">
+                            <svg width="1450px" height="11px" viewBox="0 0 1450 11" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <!-- Generator: Sketch 62 (91390) - https://sketch.com -->
+                                <title>onetap-4</title>
+                                <desc>Created with Sketch.</desc>
+                                <g id="Landing-Page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                    <g id="onetap-4">
+                                        <circle id="Oval" fill="#FFFFFF" cx="1444.5" cy="5.5" r="5.5"></circle>
+                                        <line x1="1440.5" y1="5.5" x2="0.5" y2="5.5" id="Line" stroke="#FFFFFF" stroke-linecap="square">
+                                        </line>
+                                    </g>
+                                </g>
+                            </svg>
+                        </div>
+                    
+                        <span class="more-features-function__info">Strong visual features with various ESP options, free cam, knife and
+                            taser range, scope blend, hitmarkers, and
+                            customizable playermodel materials.</span>
+                    </div>
+                    
+                    <div class="more-features-function__cards">
+                    
+                        <span class="more-features-function__name">
+                            Movement
+                        </span>
+                    
+                        <div class="more-features__underline-flair">
+                            <svg width="1450px" height="11px" viewBox="0 0 1450 11" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <g id="Landing-Page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                    <g>
+                                        <circle id="Oval" fill="#FFFFFF" cx="1444.5" cy="5.5" r="5.5"></circle>
+                                        <line x1="1440.5" y1="5.5" x2="0.5" y2="5.5" id="Line" stroke="#FFFFFF" stroke-linecap="square">
+                                        </line>
+                                    </g>
+                                </g>
+                            </svg>
+                        </div>
+                    
+                        <span class="more-features-function__info">Onetap improves your movement with features such as auto bunnyhop,
+                            strafe assistance, auto strafe, edge jump, in-air
+                            duck, and loads more.</span>
+                    </div>
+                    
+                    <div class="more-features-function__cards ">
+                    
+                        <span class="more-features-function__name">
+                            Effects
+                        </span>
+                    
+                        <div class="more-features__underline-flair">
+                            <svg width="1450px" height="11px" viewBox="0 0 1450 11" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <!-- Generator: Sketch 62 (91390) - https://sketch.com -->
+                                <title>onetap-4</title>
+                                <desc>Created with Sketch.</desc>
+                                <g id="Landing-Page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                    <g id="onetap-4">
+                                        <circle id="Oval" fill="#FFFFFF" cx="1444.5" cy="5.5" r="5.5"></circle>
+                                        <line x1="1440.5" y1="5.5" x2="0.5" y2="5.5" id="Line" stroke="#FFFFFF" stroke-linecap="square">
+                                        </line>
+                                    </g>
+                                </g>
+                            </svg>
+                        </div>
+                    
+                        <span class="more-features-function__info">Some featured effects include night mode, fullbright mode, thirdperson
+                            mode, wall transparency, and several removers.</span>
+                    </div>
+
+                </div>
+
+                <div class="more-features-function__bottom">
+
+                    <div class="more-features-function__cards">
+                    
+                        <span class="more-features-function__name">
+                            World
+                        </span>
+                    
+                        <div class="more-features__underline-flair">
+                            <svg width="1450px" height="11px" viewBox="0 0 1450 11" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <!-- Generator: Sketch 62 (91390) - https://sketch.com -->
+                                <title>onetap-4</title>
+                                <desc>Created with Sketch.</desc>
+                                <g id="Landing-Page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                    <g id="onetap-4">
+                                        <circle id="Oval" fill="#FFFFFF" cx="1444.5" cy="5.5" r="5.5"></circle>
+                                        <line x1="1440.5" y1="5.5" x2="0.5" y2="5.5" id="Line" stroke="#FFFFFF" stroke-linecap="square">
+                                        </line>
+                                    </g>
+                                </g>
+                            </svg>
+                        </div>
+                    
+                        <span class="more-features-function__info">Onetap features many world cheats like entity ESP (which includes bomb,
+                            hostage, grenade, and weapon ESP), and more.</span>
+                    </div>
+                    
+                    <div class="more-features-function__cards">
+                    
+                        <span class="more-features-function__name">
+                            Players
+                        </span>
+                    
+                        <div class="more-features__underline-flair">
+                            <svg width="1450px" height="11px" viewBox="0 0 1450 11" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <!-- Generator: Sketch 62 (91390) - https://sketch.com -->
+                                <title>onetap-4</title>
+                                <desc>Created with Sketch.</desc>
+                                <g id="Landing-Page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                    <g id="onetap-4">
+                                        <circle id="Oval" fill="#FFFFFF" cx="1444.5" cy="5.5" r="5.5"></circle>
+                                        <line x1="1440.5" y1="5.5" x2="0.5" y2="5.5" id="Line" stroke="#FFFFFF" stroke-linecap="square">
+                                        </line>
+                                    </g>
+                                </g>
+                            </svg>
+                        </div>
+                    
+                        <span class="more-features-function__info">Obtain knowledge of the whereabouts of other players with wallhack,
+                            Player ESP, customizable playermodel chams and
+                            materials.
+                        </span>
+                    </div>
+                    
+                    <div class="more-features-function__cards">
+                    
+                        <span class="more-features-function__name">
+                            Misc
+                        </span>
+                    
+                        <div class="more-features__underline-flair">
+                            <svg width="1450px" height="11px" viewBox="0 0 1450 11" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <!-- Generator: Sketch 62 (91390) - https://sketch.com -->
+                                <title>onetap-4</title>
+                                <desc>Created with Sketch.</desc>
+                                <g id="Landing-Page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                    <g id="onetap-4">
+                                        <circle id="Oval" fill="#FFFFFF" cx="1444.5" cy="5.5" r="5.5"></circle>
+                                        <line x1="1440.5" y1="5.5" x2="0.5" y2="5.5" id="Line" stroke="#FFFFFF" stroke-linecap="square">
+                                        </line>
+                                    </g>
+                                </g>
+                            </svg>
+                        </div>
+                    
+                        <span class="more-features-function__info">Onetap features so much more, including skin changer, rank revealer,
+                            automatic fire, clantag changer, and a lot of other
+                            features.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="more-features__button">
+            <a class="more-features__button-view" href="#">View ALL FEATURES</a>
+        </div>
+    </section>
+
+    <section class="ready">
+        <div class="container">
+
+            <div class="ready-try">
+                <span class="ready-try__onetap">
+                    READY to tray ONETAP?
+                </span>
+
+                <a href="#" class="get-onetap"> get onetap </a>
+            </div>
+
+            <img src="img/skull-unmasked.png" alt="#" class="ready__bc-img">
+            
+            <img src="img/features/onetap-Flair1.svg" alt="#" class="ready__bc-flair1">
+            <img src="img/features/onetap-Flair2.svg" alt="#" class="ready__bc-flair2">
+
+        </div>
+    </section>
+
+    <section class="action">
+        <img src="img/features/onetap-Flair1.svg" alt="#" class="action__bc-flair1">
+        <img src="img/features/onetap-Flair2.svg" alt="#" class="action__bc-flair2">
+        <div class="container">
+
+            <div class="action-container">
+                <div class="action-left">
+                    <span class="action-left__name">
+                        Onetap in Action
+                    </span>
+                
+                    <div class="action-left__underline-flair">
+                        <svg width="1450px" height="11px" viewBox="0 0 1450 11" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <!-- Generator: Sketch 62 (91390) - https://sketch.com -->
+                            <title>onetap-4</title>
+                            <desc>Created with Sketch.</desc>
+                            <g id="Landing-Page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g id="onetap-4">
+                                    <circle id="Oval" fill="#FFFFFF" cx="1444.5" cy="5.5" r="5.5"></circle>
+                                    <line x1="1440.5" y1="5.5" x2="0.5" y2="5.5" id="Line" stroke="#FFFFFF" stroke-linecap="square">
+                                    </line>
+                                </g>
+                            </g>
+                        </svg>
+                    </div>
+                
+                    <span class="action-left__info">Here you can find videos of our subscribers using Onetap. See how it works and what
+                        they have to say about the best
+                        cheat out there.
+                    </span>
+                
+                    <a href="#" class="action-left__button">more video</a>
+                
+                </div>
+                
+                
+                <div class="action-right">
+                    <!-- Swiper -->
+                    <div class="swiper-container mySwiperAction">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide swiper-slide__action"> <img class="swiper-slide__action-image" src="img/action/action-swiper7.png" alt="#"> </div>
+                            <div class="swiper-slide swiper-slide__action"> <img class="swiper-slide__action-image" src="img/action/action-swiper7.png" alt="#"> </div>
+                            <div class="swiper-slide swiper-slide__action"> <img class="swiper-slide__action-image"
+                                    src="img/action/action-swiper7.png" alt="#"> </div>
+                            <div class="swiper-slide swiper-slide__action"> <img class="swiper-slide__action-image"
+                                    src="img/action/action-swiper7.png" alt="#"> </div>
+                            <div class="swiper-slide swiper-slide__action"> <img class="swiper-slide__action-image"
+                                    src="img/action/action-swiper7.png" alt="#"> </div>
+                            <div class="swiper-slide swiper-slide__action"> <img class="swiper-slide__action-image"
+                                    src="img/action/action-swiper7.png" alt="#"> </div>
+                            <div class="swiper-slide swiper-slide__action"> <img class="swiper-slide__action-image"
+                                    src="img/action/action-swiper7.png" alt="#"> </div>
+                            <div class="swiper-slide swiper-slide__action"> <img class="swiper-slide__action-image"
+                                    src="img/action/action-swiper7.png" alt="#"> </div>
+                            <div class="swiper-slide swiper-slide__action"> <img class="swiper-slide__action-image"
+                                    src="img/action/action-swiper7.png" alt="#"> </div>
+                            
+                        </div>
+                        
+                        <div class="action-swiper-button">
+                            
+                            <div class="swiper-button__action-a">
+                                
+
+                                <svg class="swiper-button-next swiper-button-next__action bi bi-arrow-left-square" xmlns="http://www.w3.org/2000/svg"
+                                    width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                                </svg>
+                            </div>
+
+                            <div class="swiper-button__action-a">
+                                <svg class="swiper-button-prev swiper-button-prev__action bi bi-arrow-left-square" xmlns="http://www.w3.org/2000/svg"
+                                    width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
+                                </svg>
+                            </div>
+                        </div>
+
+                        <div class="swiper-pagination swiper-pagination__action"></div>
+
+                    </div>
+                    
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="review">
+        <div class="container">
+
+            <img src="img/features/onetap-Flair1.svg" alt="#" class="review__bc-flair1">
+            <img src="img/features/onetap-Flair2.svg" alt="#" class="review__bc-flair2">
+
+            <div class="review-info">
+                <span class="review-info__name"> REVIEWS</span>
+                <span class="review-info__info"> Hear what real subscribers have to say about using Onetap.</span>
+            </div>
+
+            <div class="review-card">
+
+                <div class="review-card__card"> 
+
+                    <svg class="review-card__quote-left svg-inline--fa fa-quote-left fa-w-16" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="quote-left"
+                        role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path fill="currentColor"
+                            d="M464 256h-80v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8c-88.4 0-160 71.6-160 160v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48zm-288 0H96v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8C71.6 32 0 103.6 0 192v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48z">
+                        </path>
+                    </svg>
+
+                    <svg class="review-card__quote-right svg-inline--fa fa-quote-right fa-w-16" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="quote-right"
+                        role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path fill="currentColor"
+                            d="M464 32H336c-26.5 0-48 21.5-48 48v128c0 26.5 21.5 48 48 48h80v64c0 35.3-28.7 64-64 64h-8c-13.3 0-24 10.7-24 24v48c0 13.3 10.7 24 24 24h8c88.4 0 160-71.6 160-160V80c0-26.5-21.5-48-48-48zm-288 0H48C21.5 32 0 53.5 0 80v128c0 26.5 21.5 48 48 48h80v64c0 35.3-28.7 64-64 64h-8c-13.3 0-24 10.7-24 24v48c0 13.3 10.7 24 24 24h8c88.4 0 160-71.6 160-160V80c0-26.5-21.5-48-48-48z">
+                        </path>
+                    </svg>
+
+                    <div class="review-card__avatar">
+                        <img src="img/reviews/1.png" alt="#">
+                    </div>
+
+                    <div class="review-card__info">
+                        It is the best cheat that I have ever used. Feature rich, and private-like but it's public which makes it amazing. I use
+                        it every day.
+                    </div>
+
+                    <div class="review-card__author">
+                        Mercury, Member
+                    </div>
+                </div>
+
+                <div class="review-card__card">
+                
+                    <svg class="review-card__quote-left svg-inline--fa fa-quote-left fa-w-16" aria-hidden="true" focusable="false"
+                        data-prefix="fas" data-icon="quote-left" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path fill="currentColor"
+                            d="M464 256h-80v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8c-88.4 0-160 71.6-160 160v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48zm-288 0H96v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8C71.6 32 0 103.6 0 192v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48z">
+                        </path>
+                    </svg>
+                
+                    <svg class="review-card__quote-right svg-inline--fa fa-quote-right fa-w-16" aria-hidden="true" focusable="false"
+                        data-prefix="fas" data-icon="quote-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path fill="currentColor"
+                            d="M464 32H336c-26.5 0-48 21.5-48 48v128c0 26.5 21.5 48 48 48h80v64c0 35.3-28.7 64-64 64h-8c-13.3 0-24 10.7-24 24v48c0 13.3 10.7 24 24 24h8c88.4 0 160-71.6 160-160V80c0-26.5-21.5-48-48-48zm-288 0H48C21.5 32 0 53.5 0 80v128c0 26.5 21.5 48 48 48h80v64c0 35.3-28.7 64-64 64h-8c-13.3 0-24 10.7-24 24v48c0 13.3 10.7 24 24 24h8c88.4 0 160-71.6 160-160V80c0-26.5-21.5-48-48-48z">
+                        </path>
+                    </svg>
+                
+                    <div class="review-card__avatar">
+                        <img src="img/reviews/2.png" alt="#">
+                    </div>
+                
+                    <div class="review-card__info">
+                        I have used all types of configs from toe eating to head tapping and I have to say whatever your playstyle is, Onetap
+                        can ensure you will do good.
+                    </div>
+                
+                    <div class="review-card__author">
+                        PhilHcV, Member
+                    </div>
+                </div>
+
+                <div class="review-card__card">
+                
+                    <svg class="review-card__quote-left svg-inline--fa fa-quote-left fa-w-16" aria-hidden="true" focusable="false"
+                        data-prefix="fas" data-icon="quote-left" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path fill="currentColor"
+                            d="M464 256h-80v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8c-88.4 0-160 71.6-160 160v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48zm-288 0H96v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8C71.6 32 0 103.6 0 192v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48z">
+                        </path>
+                    </svg>
+                
+                    <svg class="review-card__quote-right svg-inline--fa fa-quote-right fa-w-16" aria-hidden="true" focusable="false"
+                        data-prefix="fas" data-icon="quote-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path fill="currentColor"
+                            d="M464 32H336c-26.5 0-48 21.5-48 48v128c0 26.5 21.5 48 48 48h80v64c0 35.3-28.7 64-64 64h-8c-13.3 0-24 10.7-24 24v48c0 13.3 10.7 24 24 24h8c88.4 0 160-71.6 160-160V80c0-26.5-21.5-48-48-48zm-288 0H48C21.5 32 0 53.5 0 80v128c0 26.5 21.5 48 48 48h80v64c0 35.3-28.7 64-64 64h-8c-13.3 0-24 10.7-24 24v48c0 13.3 10.7 24 24 24h8c88.4 0 160-71.6 160-160V80c0-26.5-21.5-48-48-48z">
+                        </path>
+                    </svg>
+                
+                    <div class="review-card__avatar">
+                        <img src="img/reviews/3.png" alt="#">
+                    </div>
+                
+                    <div class="review-card__info">
+                        Ragebot 11/10 - I do not miss, I have never shot fake in my time with this cheat.
+                    </div>
+                
+                    <div class="review-card__author">
+                        Panic, Member
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="review__button">
+                <a class="review__button-view" href="#">see more reviews</a>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="experience">
+
+        <img class="experience__bc-image" src="img/onetap-bottomFooterCtaBg.jpg" alt="#">
+
+        <div class="container">
+
+            <div class="experience-try">
+                <span class="experience-try__onetap">
+                    TRY Onetap TODAY FOR THE BEST CSGO EXPERIENCE
+                </span>
+
+                <span class="experience-try__info">
+                    Hundreds of features to help you have the best CSGO experience you could possibly imagine.
+                </span>
+
+                <div class="experience-try-button">
+                    <a href="#" class="get-onetap"> get onetap </a>
+
+                    <div class="experience__button">
+                        <a class="experience__button-view" href="#">view features</a>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </section> 
+
+    <footer class="footer">
+        <div class="container footer-container">
+            
+            <div class="footer-copyright">
+                Copyright © 2021 Onetap. All rights reserved.
+            </div>
+
+            <div class="footer-links">
+                <a href="#" class="footer__link footer__contact">contact use</a> 
+                <a href="#" class="footer__link footer__terms"> trems of use</a>  
+                <a href="#" class="footer__link footer__policy">privaty policy</a>
+                <a href="#top" class="footer__link footer__top">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up"
+                        viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z" />
+                    </svg> 
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"> </script>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+
+    <script src="js/main.js"></script>
+
+</body>
+</html>

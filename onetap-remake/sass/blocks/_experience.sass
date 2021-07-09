@@ -1,0 +1,72 @@
+.experience
+    position: relative
+    overflow: hidden
+    max-height: 250px
+    padding: 50px 0
+    background-color: #19191d
+    &__bc-image
+        position: absolute
+        left: 0
+        right: 0
+        bottom: 0
+        z-index: 3
+        width: 100%
+        top: 0
+        object-fit: cover
+        // &::before
+        //     background: -webkit-gradient(linear,left top,right top,from(#16161a),to(transparent))
+        //     background: -o-linear-gradient(left,#16161a,transparent)
+        //     background: linear-gradient(90deg,#16161a,transparent)
+        //     content: ''
+        //     position: absolute
+        //     top: 0
+        //     right: 0
+        //     bottom: 0
+        //     left: 0
+        //     width: 100%
+        //     z-index: 0
+        //     display: block
+        //     height: auto
+        //     opacity: 1
+    &-try
+        z-index: 4
+        display: flex
+        flex-direction: column
+        &__onetap
+            letter-spacing: 0
+            font-family: Quantico,noto sans,helvetica,arial,sans-serif
+            text-transform: uppercase
+            color: #fff
+            font-size: 24px
+            margin-bottom: 20px
+            z-index: 4
+        &__info
+            font-size: 14px
+            color: #e0e6f0
+            margin-bottom: 25px
+            z-index: 4
+        &-button
+            display: flex
+            z-index: 4
+    &__button
+        &-view
+            display: flex
+            justify-content: center
+            align-items: center
+            color: #20a4c0
+            text-decoration: none
+            max-width: 180px
+            padding: 0 10px
+            text-decoration: none
+            border-radius: 4px
+            border: 2px solid #20a4c0
+            font-weight: bold
+            text-transform: uppercase
+            transition: 300ms
+            font-size: 14px
+            height: 38px
+            margin-left: 20px
+            &:hover
+                transition: 300ms
+                color: white
+                background-color: #20a4c0

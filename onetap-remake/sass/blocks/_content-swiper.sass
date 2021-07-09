@@ -1,0 +1,109 @@
+.swiper-container
+    width: 100%
+    height: 100%
+.swiper-slide__content-swiper
+    text-align: center
+    font-size: 18px
+    background: #fff
+    display: -webkit-box
+    display: -ms-flexbox
+    display: -webkit-flex
+    display: flex
+    -webkit-box-pack: center
+    -ms-flex-pack: center
+    -webkit-justify-content: center
+    justify-content: center
+    -webkit-box-align: center
+    -ms-flex-align: center
+    -webkit-align-items: center
+    align-items: center
+    & img
+        display: block
+        width: 100%
+        height: 100%
+        object-fit: cover
+
+.swiper-slide__content-swiper
+    // display: flex
+    // flex-direction: column
+    // justify-content: start
+    // align-items: start
+    position: relative
+
+.content-swiper
+    background-color: #232328
+
+    overflow: hidden
+    &-container
+        // position: relative
+    &__date-container
+        position: absolute
+        top: 35%
+        transform: translateY(-50%)
+    &__date
+        position: absolute
+        display: flex
+        flex-direction: column
+        align-items: start
+    &__name
+        line-height: 1
+        font-family: Quantico,noto sans,helvetica,arial,sans-serif
+        letter-spacing: 2px
+        text-transform: uppercase
+        color: #fff
+        font-weight: bold
+        font-size: 30px
+        z-index: 2
+        margin-bottom: 15px
+    &__info
+        color: #bdc6db
+        font: 1.4rem/1.4 sans-serif
+        font-family: noto sans,-apple-system,BlinkMacSystemFont,segoe ui,oxygen,ubuntu,cantarell,fira sans,droid sans,helvetica neue,sans-serif
+        font-weight: 400
+        text-align: left
+        font-size: 18px
+        z-index: 2
+        margin-bottom: 20px
+        max-width: 400px
+    &__bc-image
+        // background-image: url(../img/content-swiper/1.jpg)
+        width: 100%
+        height: 500px
+        &::before
+            content: ''
+            display: block
+            position: absolute
+            top: 0
+            left: 0
+            right: 0
+            bottom: 0
+            background-color: rgba(0,0,0,.5)
+            z-index: 0
+// buttons
+.content-swiper
+    &__buttons
+        position: absolute
+        z-index: 3
+        bottom: 0
+        right: 0
+        width: 90px
+.swiper-button-next__content-swiper
+    position: absolute
+    z-index: 3
+    bottom: 0
+    right: 20px
+    transform: translateY(-50%)
+    color: #6d6c6b
+    transition: 300ms
+    &:hover
+        color: #fff
+        transition: 300ms
+.swiper-button-prev__content-swiper
+    position: absolute
+    z-index: 3
+    transform: translateY(-50%)
+    color: #6d6c6b
+    transition: 300ms
+    &:hover
+        color: #fff
+        transition: 300ms

@@ -1,0 +1,157 @@
+.action
+    padding: 50px 0
+    background-color: #2d3037
+    position: relative
+    overflow: hidden
+    &-container
+        display: flex
+        justify-content: space-between
+    &-left
+        display: flex
+        flex-direction: column
+        max-width: 320px
+        &__underline-flair svg
+            display: block
+            position: relative
+            margin: 5px 0
+            width: 150px
+            height: 15px
+            opacity: .2
+        &__name
+            color: #faa618
+            letter-spacing: 0
+            font-family: Quantico,noto sans,helvetica,arial,sans-serif
+            font-weight: 400
+            margin-bottom: 14px
+        &__info
+            font-size: 14px
+            color: #e0e6f0
+            margin: 14px 0 25px 0
+        &__button
+            display: flex
+            justify-content: center
+            display: flex
+            align-items: center
+            color: #20a4c0
+            text-decoration: none
+            width: 100%
+            padding: 0 10px
+            text-decoration: none
+            border-radius: 4px
+            border: 2px solid #20a4c0
+            font-weight: bold
+            text-transform: uppercase
+            transition: 300ms
+            font-size: 14px
+            height: 38px
+            &:hover
+                transition: 300ms
+                color: white
+                background-color: #20a4c0
+    &-right
+        position: relative
+        width: 720px
+        height: 230px
+
+    &__bc
+        &-flair1
+            position: absolute
+            opacity: .1
+            position: absolute
+            left: -50px
+            bottom: 25px
+
+        &-flair2
+            position: absolute
+            opacity: .1
+
+            right: -300px
+            bottom: 10px
+
+// swiper
+
+.mySwiperAction
+    width: 100%
+    height: 100%
+    .swiper-slide__action
+        // text-align: center
+        // font-size: 18px
+        // background: #fff
+        // display: -webkit-box
+        // display: -ms-flexbox
+        // display: -webkit-flex
+        // display: flex
+        // -webkit-box-pack: center
+        // -ms-flex-pack: center
+        // -webkit-justify-content: center
+        // justify-content: center
+        // -webkit-box-align: center
+        // -ms-flex-align: center
+        // -webkit-align-items: center
+        // align-items: center
+    & img
+        display: block
+        width: 100%
+        height: 100%
+        object-fit: cover
+
+    .swiper-slide__action
+        &-image
+            height: 180px
+            width: 180px
+
+//  pagination управление стилями
+.swiper-pagination
+
+.swiper-pagination-bullet
+    width: 40px
+    height: 5px
+    border-radius: 0
+.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet
+    margin: 0
+    transition: 500ms
+    &:hover
+        transition: 500ms
+        background: #faa618
+    &-active
+        background: #faa618
+
+// button
+.action-swiper-button
+    position: absolute
+    z-index: 11
+    bottom: 0
+    left: 0
+    cursor: pointer
+    width: 100px
+    bottom: -3px
+.swiper-button-next__action
+    position: absolute
+    display: flex
+    z-index: 11
+    transform: translateY(-50%)
+    color: #6d6c6b
+    transition: 300ms
+    left: 25px
+
+    height: 32px
+    width: 32px
+    &:hover
+        color: #fff
+        transition: 300ms
+
+.swiper-button-prev__action
+
+    position: absolute
+    display: flex
+    z-index: 11
+    bottom: 0
+    transform: translateY(-50%)
+    color: #6d6c6b
+    transition: 300ms
+    left: 0
+    height: 32px
+    width: 32px
+    &:hover
+        color: #fff
+        transition: 300ms

@@ -1,0 +1,58 @@
+.header
+    height: 65px
+    background-color: #232328
+    display: flex
+    overflow: hidden
+    &-container
+        display: flex
+        justify-content: space-between
+        align-items: center
+        position: relative
+    &-link
+        display: flex
+        flex-direction: row
+        padding-left: 160px
+        position: absolute
+        &__forums
+            color: #d4dae8
+            text-decoration: none
+            margin-right: 30px
+            display: flex
+            align-items: center
+            transition: 500ms
+
+            &:hover
+                color: #fff
+                transition: 500ms
+        &__media
+            color: #d4dae8
+            text-decoration: none
+            margin-right: 30px
+            display: flex
+            align-items: center
+            transition: 500ms
+            &:hover
+                color: #fff
+                transition: 500ms
+        &__members
+            color: #d4dae8
+            text-decoration: none
+            margin-right: 30px
+            display: flex
+            align-items: center
+            transition: 500ms
+            &:hover
+                color: #fff
+                transition: 500ms
+        &__text
+            margin-left: 6px
+    &__onetap-logo
+        background-image: url(/img/onetap.svg)
+        background-size: cover
+        background-repeat: no-repeat
+        background-position-x: center
+        position: relative
+        z-index: 2
+        opacity: .1
+        background-position-y: -56px
+        width: 130px

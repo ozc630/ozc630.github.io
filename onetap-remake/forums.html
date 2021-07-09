@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Onetap</title>
+    
+    <!-- favicon -->
+    <link rel="shortcut icon" href="/img/onetap.ico" type="img/x-icon">
+    
+    <!-- bootstrap -->
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    
+    <!-- css -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- font Quantico -->
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+
+    <!-- Tippy Css -->
+
+    <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css" />
+
+</head>
+<body>
+
+
+    <header class="header" id="top">
+    
+        <div class="container header-container">
+    
+            <a href="index.html" class=""><img src="https://www.onetap.com/img/onetap.svg" alt="onetap: icon" class="header__onetap-logo"></a>
+    
+            <div class="header-link">
+    
+                <a href="forums.html" class="header-link__forums">
+    
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-chat-dots" viewBox="0 0 16 16">
+                        <path
+                            d="M5 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
+                        <path
+                            d="m2.165 15.803.02-.004c1.83-.363 2.948-.842 3.468-1.105A9.06 9.06 0 0 0 8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6a10.437 10.437 0 0 1-.524 2.318l-.003.011a10.722 10.722 0 0 1-.244.637c-.079.186.074.394.273.362a21.673 21.673 0 0 0 .693-.125zm.8-3.108a1 1 0 0 0-.287-.801C1.618 10.83 1 9.468 1 8c0-3.192 3.004-6 7-6s7 2.808 7 6c0 3.193-3.004 6-7 6a8.06 8.06 0 0 1-2.088-.272 1 1 0 0 0-.711.074c-.387.196-1.24.57-2.634.893a10.97 10.97 0 0 0 .398-2z" />
+                    </svg>
+                    <span class="header-link__text">Forums</span>
+                </a>
+    
+                <a href="#" class="header-link__media">
+    
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-camera"
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M15 12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h1.172a3 3 0 0 0 2.12-.879l.83-.828A1 1 0 0 1 6.827 3h2.344a1 1 0 0 1 .707.293l.828.828A3 3 0 0 0 12.828 5H14a1 1 0 0 1 1 1v6zM2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4H2z" />
+                        <path
+                            d="M8 11a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5zm0 1a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7zM3 6.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0z" />
+                    </svg>
+                    <span class="header-link__text">Media</span>
+                </a>
+    
+                <a href="#" class="header-link__members">
+    
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-people"
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0zM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816zM4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275zM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4z" />
+                    </svg>
+                    <span class="header-link__text">Members</span>
+                </a>
+    
+            </div>
+    
+            <div class="header-get">
+    
+                <a class="header-get__login" href="#">Log in</a>
+    
+                <a href="#" class="get-onetap"> get onetap </a>
+    
+                <a class="header-get__search" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                        </svg>
+                </a>
+
+            </div>
+                
+        </div>
+    </header>
+
+    <section class="header-bottom">
+    
+        <div class="container">
+            <a href="#" class="header-bottom-links header-bottom__profile">Your Profile</a>
+            <a href="#" class="header-bottom-links header-bottom__account">Your Account</a>
+            <a href="#" class="header-bottom-links header-bottom__logout"> Log out</a>
+            <a href="#" class="header-bottom__register">Register</a>
+        </div>
+
+    </section>
+
+    <section class="gameplay">
+        <div class="container gameplay-container">
+            <div class="gameplay__bc-image">
+                <img class="gameplay__bc-img" src="img/content-swiper/2.jpg" alt="">
+            </div>
+
+            <div class="gameplay-text">
+
+                <span class="gameplay-text__name">
+                ENHANCE YOUR GAMEPLAY</span>
+                
+                <div class="gameplay-text__info">
+                    Register to become part of the Onetap community today!
+                </div>
+
+                <div class="gameplay-text-buttons">
+                    <a href="#" class="gameplay-text__register"> Register </a>
+
+                    <a class="gameplay-text__login" href="#">login</a>
+
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="main-body">
+        <div class="container">
+            
+            <a href="#" class="main-body-link">
+                Official
+            </a>
+
+            <div class="main-body-container">
+                
+                <div class="main-body-left">
+
+                    <div class="main-body-official">
+                        
+                        <div class="main-body-official__news">
+                
+                            <svg class="main-body__icon-news svg-inline--fa fa-comments fa-w-18" aria-hidden="true" focusable="false" data-prefix="far"
+                                data-icon="comments" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                <path fill="currentColor"
+                                    d="M532 386.2c27.5-27.1 44-61.1 44-98.2 0-80-76.5-146.1-176.2-157.9C368.3 72.5 294.3 32 208 32 93.1 32 0 103.6 0 192c0 37 16.5 71 44 98.2-15.3 30.7-37.3 54.5-37.7 54.9-6.3 6.7-8.1 16.5-4.4 25 3.6 8.5 12 14 21.2 14 53.5 0 96.7-20.2 125.2-38.8 9.2 2.1 18.7 3.7 28.4 4.9C208.1 407.6 281.8 448 368 448c20.8 0 40.8-2.4 59.8-6.8C456.3 459.7 499.4 480 553 480c9.2 0 17.5-5.5 21.2-14 3.6-8.5 1.9-18.3-4.4-25-.4-.3-22.5-24.1-37.8-54.8zm-392.8-92.3L122.1 305c-14.1 9.1-28.5 16.3-43.1 21.4 2.7-4.7 5.4-9.7 8-14.8l15.5-31.1L77.7 256C64.2 242.6 48 220.7 48 192c0-60.7 73.3-112 160-112s160 51.3 160 112-73.3 112-160 112c-16.5 0-33-1.9-49-5.6l-19.8-4.5zM498.3 352l-24.7 24.4 15.5 31.1c2.6 5.1 5.3 10.1 8 14.8-14.6-5.1-29-12.3-43.1-21.4l-17.1-11.1-19.9 4.6c-16 3.7-32.5 5.6-49 5.6-54 0-102.2-20.1-131.3-49.7C338 339.5 416 272.9 416 192c0-3.4-.4-6.7-.7-10C479.7 196.5 528 238.8 528 288c0 28.7-16.2 50.6-29.7 64z">
+                                </path>
+                            </svg>
+                
+                            <div class="main-body-text">
+                                <a href="#" class="main-body__name">News</a>
+                                <span class="main-body__info">Important news and announcements</span>
+                            </div>
+                
+                            <div class="main-body-stats">
+                                <div class="main-body-thrades">
+                                    <span class="main-body__thrades">Threads</span>
+                                    <span class="main-body__number">44</span>
+                                </div>
+                                
+                                <div class="main-body__states-line"> <hr> </div>
+                                
+                                <div class="main-body-messages">
+                                    <span class="main-body__messages">Messages</span>
+                                    <span class="main-body__number">580</span>
+                                </div>
+                            </div>
+                
+                            <div class="main-body-last-user">
+
+                                
+
+                                <div title="#title_user-2" class="modal-user-1">
+                                    <a href="#"><img src="img/user-avatars/1.jpg" alt="user-avatar" class="main-body-last-user__avatar"></a>
+                                </div>
+                               
+                
+                                <div class="main-body-last-user-author">
+
+                                    <a href="#" class="main-body-last-user__theme">Cloud API</a>
+                
+                                    <span class="main-body-last-user__date">Feb 3, 2021
+                                        <div class="main-body-last-user__line"> <hr> </div>
+                                        <a class="main-body-last-user__user-link" href="#">lani</a>
+                                    </span>
+                
+                                </div>
+                            </div>
+                            
+                        </div>
+                        
+                        <div class="main-body-official__community">
+                        
+                            <svg class="main-body__icon svg-inline--fa fa-comments fa-w-18" aria-hidden="true" focusable="false" data-prefix="far"
+                            data-icon="comments" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                            <path fill="currentColor"
+                                d="M532 386.2c27.5-27.1 44-61.1 44-98.2 0-80-76.5-146.1-176.2-157.9C368.3 72.5 294.3 32 208 32 93.1 32 0 103.6 0 192c0 37 16.5 71 44 98.2-15.3 30.7-37.3 54.5-37.7 54.9-6.3 6.7-8.1 16.5-4.4 25 3.6 8.5 12 14 21.2 14 53.5 0 96.7-20.2 125.2-38.8 9.2 2.1 18.7 3.7 28.4 4.9C208.1 407.6 281.8 448 368 448c20.8 0 40.8-2.4 59.8-6.8C456.3 459.7 499.4 480 553 480c9.2 0 17.5-5.5 21.2-14 3.6-8.5 1.9-18.3-4.4-25-.4-.3-22.5-24.1-37.8-54.8zm-392.8-92.3L122.1 305c-14.1 9.1-28.5 16.3-43.1 21.4 2.7-4.7 5.4-9.7 8-14.8l15.5-31.1L77.7 256C64.2 242.6 48 220.7 48 192c0-60.7 73.3-112 160-112s160 51.3 160 112-73.3 112-160 112c-16.5 0-33-1.9-49-5.6l-19.8-4.5zM498.3 352l-24.7 24.4 15.5 31.1c2.6 5.1 5.3 10.1 8 14.8-14.6-5.1-29-12.3-43.1-21.4l-17.1-11.1-19.9 4.6c-16 3.7-32.5 5.6-49 5.6-54 0-102.2-20.1-131.3-49.7C338 339.5 416 272.9 416 192c0-3.4-.4-6.7-.7-10C479.7 196.5 528 238.8 528 288c0 28.7-16.2 50.6-29.7 64z">
+                            </path>
+                            </svg>
+                        
+                            <div class="main-body-text">
+                                <a href="#" class="main-body__name">Community</a>
+                                <span class="main-body__info">Community news and announcements</span>
+                            </div>
+                        
+                            <div class="main-body-stats">
+                                <div class="main-body-thrades">
+                                    <span class="main-body__thrades">Threads</span>
+                                    <span class="main-body__number">52</span>
+                                </div>
+                        
+                                <div class="main-body__states-line">
+                                    <hr>
+                                </div>
+                        
+                                <div class="main-body-messages">
+                                    <span class="main-body__messages">Messages</span>
+                                    <span class="main-body__number">2.1K</span>
+                                </div>
+                            </div>
+                        
+                            <div class="main-body-last-user">
+                                <div class="modal-user-2 ">
+                                    <a href="#"><img src="img/user-avatars/2.jpg" alt="user-avatar" class="main-body-last-user__avatar"></a>
+                                </div>
+                        
+                                <div class="main-body-last-user-author">
+                        
+                                    <a href="#" class="main-body-last-user__theme">Cloud API</a>
+                        
+                                    <span class="main-body-last-user__date">Feb 3, 2021
+                                        <div class="main-body-last-user__line">
+                                            <hr>
+                                        </div>
+                                        <a class="main-body-last-user__user-link" href="#">lani</a>
+                                    </span>
+                        
+                                </div>
+                            </div>
+                        
+                        </div>
+
+                    </div>
+
+                    <a href="#" class="main-body-link">
+                        Upgrades
+                    </a>
+
+                    <div class="main-body-upgrades">
+
+                        <div class="main-body-upgrades__onetap">
+
+                            <svg class="main-body__icon svg-inline--fa fa-comments fa-w-18" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="link" 
+                                role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path fill="currentColor"
+                                    d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z">
+                                </path>
+                            </svg>
+                        
+                            <div class="main-body-text">
+                                <a href="#" class="main-body__name  main-body__name--onetap-csgo">Onetap CSGO</a>
+                            </div>
+                        
+                        
+                        </div>
+
+                        
+
+                    </div>
+
+                    <a href="#" class="main-body-link">
+                        Public
+                    </a>
+
+                    <div class="main-body-public">
+
+                        <div class="main-body-official__news">
+                        
+                            <svg class="main-body__icon svg-inline--fa fa-comments fa-w-18" aria-hidden="true" focusable="false" data-prefix="far"
+                                data-icon="comments" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                <path fill="currentColor"
+                                    d="M532 386.2c27.5-27.1 44-61.1 44-98.2 0-80-76.5-146.1-176.2-157.9C368.3 72.5 294.3 32 208 32 93.1 32 0 103.6 0 192c0 37 16.5 71 44 98.2-15.3 30.7-37.3 54.5-37.7 54.9-6.3 6.7-8.1 16.5-4.4 25 3.6 8.5 12 14 21.2 14 53.5 0 96.7-20.2 125.2-38.8 9.2 2.1 18.7 3.7 28.4 4.9C208.1 407.6 281.8 448 368 448c20.8 0 40.8-2.4 59.8-6.8C456.3 459.7 499.4 480 553 480c9.2 0 17.5-5.5 21.2-14 3.6-8.5 1.9-18.3-4.4-25-.4-.3-22.5-24.1-37.8-54.8zm-392.8-92.3L122.1 305c-14.1 9.1-28.5 16.3-43.1 21.4 2.7-4.7 5.4-9.7 8-14.8l15.5-31.1L77.7 256C64.2 242.6 48 220.7 48 192c0-60.7 73.3-112 160-112s160 51.3 160 112-73.3 112-160 112c-16.5 0-33-1.9-49-5.6l-19.8-4.5zM498.3 352l-24.7 24.4 15.5 31.1c2.6 5.1 5.3 10.1 8 14.8-14.6-5.1-29-12.3-43.1-21.4l-17.1-11.1-19.9 4.6c-16 3.7-32.5 5.6-49 5.6-54 0-102.2-20.1-131.3-49.7C338 339.5 416 272.9 416 192c0-3.4-.4-6.7-.7-10C479.7 196.5 528 238.8 528 288c0 28.7-16.2 50.6-29.7 64z">
+                                </path>
+                            </svg>
+                        
+                            <div class="main-body-text">
+                                <a href="#" class="main-body__name">Showcase</a>
+                                <span class="main-body__info">Showcase your videos and screenshots</span>
+                            </div>
+                        
+                            <div class="main-body-stats">
+                                <div class="main-body-thrades">
+                                    <span class="main-body__thrades">Threads</span>
+                                    <span class="main-body__number">44</span>
+                                </div>
+                        
+                                <div class="main-body__states-line">
+                                    <hr>
+                                </div>
+                        
+                                <div class="main-body-messages">
+                                    <span class="main-body__messages">Messages</span>
+                                    <span class="main-body__number">580</span>
+                                </div>
+                            </div>
+                        
+                            <div class="main-body-last-user">
+                                <div title="#title_user" class="modal-user-3 ">
+                                    <a href="#"><img src="img/user-avatars/1.jpg" alt="user-avatar" class="main-body-last-user__avatar"></a>
+                                </div>
+                        
+                                <div class="main-body-last-user-author">
+                        
+                                    <a href="#" class="main-body-last-user__theme">Cloud API</a>
+                        
+                                    <span class="main-body-last-user__date">Feb 3, 2021
+                                        <div class="main-body-last-user__line">
+                                            <hr>
+                                        </div>
+                                        <a class="main-body-last-user__user-link" href="#">lani</a>
+                                    </span>
+                        
+                                </div>
+                            </div>
+                        
+                        </div>
+
+                        <div class="main-body-official__news">
+                        
+                            <svg class="main-body__icon svg-inline--fa fa-comments fa-w-18" aria-hidden="true" focusable="false" data-prefix="far"
+                                data-icon="comments" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                <path fill="currentColor"
+                                    d="M532 386.2c27.5-27.1 44-61.1 44-98.2 0-80-76.5-146.1-176.2-157.9C368.3 72.5 294.3 32 208 32 93.1 32 0 103.6 0 192c0 37 16.5 71 44 98.2-15.3 30.7-37.3 54.5-37.7 54.9-6.3 6.7-8.1 16.5-4.4 25 3.6 8.5 12 14 21.2 14 53.5 0 96.7-20.2 125.2-38.8 9.2 2.1 18.7 3.7 28.4 4.9C208.1 407.6 281.8 448 368 448c20.8 0 40.8-2.4 59.8-6.8C456.3 459.7 499.4 480 553 480c9.2 0 17.5-5.5 21.2-14 3.6-8.5 1.9-18.3-4.4-25-.4-.3-22.5-24.1-37.8-54.8zm-392.8-92.3L122.1 305c-14.1 9.1-28.5 16.3-43.1 21.4 2.7-4.7 5.4-9.7 8-14.8l15.5-31.1L77.7 256C64.2 242.6 48 220.7 48 192c0-60.7 73.3-112 160-112s160 51.3 160 112-73.3 112-160 112c-16.5 0-33-1.9-49-5.6l-19.8-4.5zM498.3 352l-24.7 24.4 15.5 31.1c2.6 5.1 5.3 10.1 8 14.8-14.6-5.1-29-12.3-43.1-21.4l-17.1-11.1-19.9 4.6c-16 3.7-32.5 5.6-49 5.6-54 0-102.2-20.1-131.3-49.7C338 339.5 416 272.9 416 192c0-3.4-.4-6.7-.7-10C479.7 196.5 528 238.8 528 288c0 28.7-16.2 50.6-29.7 64z">
+                                </path>
+                            </svg>
+                        
+                            <div class="main-body-text">
+                                <a href="#" class="main-body__name">Feedback</a>
+                                <span class="main-body__info">Share your experience with the rest of us</span>
+                            </div>
+                        
+                            <div class="main-body-stats">
+                                <div class="main-body-thrades">
+                                    <span class="main-body__thrades">Threads</span>
+                                    <span class="main-body__number">44</span>
+                                </div>
+                        
+                                <div class="main-body__states-line">
+                                    <hr>
+                                </div>
+                        
+                                <div class="main-body-messages">
+                                    <span class="main-body__messages">Messages</span>
+                                    <span class="main-body__number">580</span>
+                                </div>
+                            </div>
+                        
+                            <div class="main-body-last-user">
+                                <div title="#title_user" class="modal-user-4 ">
+                                    <a href="#"><img src="img/user-avatars/1.jpg" alt="user-avatar" class="main-body-last-user__avatar"></a>
+                                </div>
+                        
+                                <div class="main-body-last-user-author">
+                        
+                                    <a href="#" class="main-body-last-user__theme">Cloud API</a>
+                        
+                                    <span class="main-body-last-user__date">Feb 3, 2021
+                                        <div class="main-body-last-user__line">
+                                            <hr>
+                                        </div>
+                                        <a class="main-body-last-user__user-link" href="#">lani</a>
+                                    </span>
+                        
+                                </div>
+                            </div>
+                        
+                        </div>
+
+                        
+                        <div class="main-body-official__community">
+
+                            <svg class="main-body__icon svg-inline--fa fa-comments fa-w-18" aria-hidden="true" focusable="false" data-prefix="far" data-icon="comments"
+                                 role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                <path fill="currentColor"
+                                    d="M532 386.2c27.5-27.1 44-61.1 44-98.2 0-80-76.5-146.1-176.2-157.9C368.3 72.5 294.3 32 208 32 93.1 32 0 103.6 0 192c0 37 16.5 71 44 98.2-15.3 30.7-37.3 54.5-37.7 54.9-6.3 6.7-8.1 16.5-4.4 25 3.6 8.5 12 14 21.2 14 53.5 0 96.7-20.2 125.2-38.8 9.2 2.1 18.7 3.7 28.4 4.9C208.1 407.6 281.8 448 368 448c20.8 0 40.8-2.4 59.8-6.8C456.3 459.7 499.4 480 553 480c9.2 0 17.5-5.5 21.2-14 3.6-8.5 1.9-18.3-4.4-25-.4-.3-22.5-24.1-37.8-54.8zm-392.8-92.3L122.1 305c-14.1 9.1-28.5 16.3-43.1 21.4 2.7-4.7 5.4-9.7 8-14.8l15.5-31.1L77.7 256C64.2 242.6 48 220.7 48 192c0-60.7 73.3-112 160-112s160 51.3 160 112-73.3 112-160 112c-16.5 0-33-1.9-49-5.6l-19.8-4.5zM498.3 352l-24.7 24.4 15.5 31.1c2.6 5.1 5.3 10.1 8 14.8-14.6-5.1-29-12.3-43.1-21.4l-17.1-11.1-19.9 4.6c-16 3.7-32.5 5.6-49 5.6-54 0-102.2-20.1-131.3-49.7C338 339.5 416 272.9 416 192c0-3.4-.4-6.7-.7-10C479.7 196.5 528 238.8 528 288c0 28.7-16.2 50.6-29.7 64z">
+                                </path>
+                            </svg>
+                        
+                            <div class="main-body-text">
+                                <a href="#" class="main-body__name main-body__name--pre-sale">Pre-Sale</a>
+                                <span class="main-body__info">Get answers to your questions before upgrading</span>
+                            </div>
+                        
+                            <div class="main-body-stats">
+                                <div class="main-body-thrades">
+                                    <span class="main-body__thrades">Threads</span>
+                                    <span class="main-body__number">52</span>
+                                </div>
+                        
+                                <div class="main-body__states-line">
+                                    <hr>
+                                </div>
+                        
+                                <div class="main-body-messages">
+                                    <span class="main-body__messages">Messages</span>
+                                    <span class="main-body__number">2.1K</span>
+                                </div>
+                            </div>
+                        
+                            <div class="main-body-last-user">
+                                <div title="#title_user" class="modal-user-5 ">
+                                    <a href="#"><img src="img/user-avatars/2.jpg" alt="user-avatar" class="main-body-last-user__avatar"></a>
+                                </div>
+                        
+                                <div class="main-body-last-user-author">
+                        
+                                    <a href="#" class="main-body-last-user__theme">Cloud API</a>
+                        
+                                    <span class="main-body-last-user__date">Feb 3, 2021
+                                        <div class="main-body-last-user__line">
+                                            <hr>
+                                        </div>
+                                        <a class="main-body-last-user__user-link" href="#">lani</a>
+                                    </span>
+                        
+                                </div>
+                            </div>
+                        
+                        </div>
+
+                    </div>
+
+                    
+                </div>
+                
+                <div class="main-body-right">
+
+                    <div class="main-body-post">
+
+                            <div class="main-body-post__bc-image">
+                                <img src="img/content-swiper/1.jpg" alt="" class="main-body-post__bc-img">
+                            </div>
+
+                        <div class="main-body-post-inside-info">
+
+                            <svg class="main-body-post__icon-comments svg-inline--fa fa-edit fa-w-18" aria-hidden="true" focusable="false"
+                                data-prefix="fas" data-icon="comments" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                <path fill="currentColor"
+                                    d="M416 192c0-88.4-93.1-160-208-160S0 103.6 0 192c0 34.3 14.1 65.9 38 92-13.4 30.2-35.5 54.2-35.8 54.5-2.2 2.3-2.8 5.7-1.5 8.7S4.8 352 8 352c36.6 0 66.9-12.3 88.7-25 32.2 15.7 70.3 25 111.3 25 114.9 0 208-71.6 208-160zm122 220c23.9-26 38-57.7 38-92 0-66.9-53.5-124.2-129.3-148.1.9 6.6 1.3 13.3 1.3 20.1 0 105.9-107.7 192-240 192-10.8 0-21.3-.8-31.7-1.9C207.8 439.6 281.8 480 368 480c41 0 79.1-9.2 111.3-25 21.8 12.7 52.1 25 88.7 25 3.2 0 6.1-1.9 7.3-4.8 1.3-2.9.7-6.3-1.5-8.7-.3-.3-22.4-24.2-35.8-54.5z">
+                                </path>
+                            </svg>
+                            
+                            <span class="main-body-post__name">Get engaged with the Onetap community</span>
+                            
+                            <span class="main-body-post__info">Show & tell time! Let us know how you're succeeding with Onetap.</span>
+                            
+                            <a class="main-body-post__button" href="#">
+                            
+                                <svg class="main-body-post__icon-edit svg-inline--fa fa-edit fa-w-18" aria-hidden="true" focusable="false"
+                                    data-prefix="far" data-icon="edit" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                    <path fill="currentColor"
+                                        d="M402.3 344.9l32-32c5-5 13.7-1.5 13.7 5.7V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V112c0-26.5 21.5-48 48-48h273.5c7.1 0 10.7 8.6 5.7 13.7l-32 32c-1.5 1.5-3.5 2.3-5.7 2.3H48v352h352V350.5c0-2.1.8-4.1 2.3-5.6zm156.6-201.8L296.3 405.7l-90.4 10c-26.2 2.9-48.5-19.2-45.6-45.6l10-90.4L432.9 17.1c22.9-22.9 59.9-22.9 82.7 0l43.2 43.2c22.9 22.9 22.9 60 .1 82.8zM460.1 174L402 115.9 216.2 301.8l-7.3 65.3 65.3-7.3L460.1 174zm64.8-79.7l-43.2-43.2c-4.1-4.1-10.8-4.1-14.8 0L436 82l58.1 58.1 30.9-30.9c4-4.2 4-10.8-.1-14.9z">
+                                    </path>
+                                </svg>
+                                <span>post thread</span>
+                                
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <div class="main-body-members">
+                    
+                        <div  class="main-body-members__online">
+
+                            <svg class="main-body-members__icon svg-inline--fa fa-users fa-w-20" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="users" 
+                                role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                                <path fill="currentColor"
+                                    d="M96 224c35.3 0 64-28.7 64-64s-28.7-64-64-64-64 28.7-64 64 28.7 64 64 64zm448 0c35.3 0 64-28.7 64-64s-28.7-64-64-64-64 28.7-64 64 28.7 64 64 64zm32 32h-64c-17.6 0-33.5 7.1-45.1 18.6 40.3 22.1 68.9 62 75.1 109.4h66c17.7 0 32-14.3 32-32v-32c0-35.3-28.7-64-64-64zm-256 0c61.9 0 112-50.1 112-112S381.9 32 320 32 208 82.1 208 144s50.1 112 112 112zm76.8 32h-8.3c-20.8 10-43.9 16-68.5 16s-47.6-6-68.5-16h-8.3C179.6 288 128 339.6 128 403.2V432c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48v-28.8c0-63.6-51.6-115.2-115.2-115.2zm-223.7-13.4C161.5 263.1 145.6 256 128 256H64c-35.3 0-64 28.7-64 64v32c0 17.7 14.3 32 32 32h65.9c6.3-47.4 34.9-87.3 75.2-109.4z">
+                                </path>
+                            </svg>
+
+                            <a href="#" class="main-body-members__online-link">Members online</a>
+                            
+                            </div>
+
+                        <div class="main-body-members__members">
+
+                            <div class="main-body-members-all-users">
+                                <a href="#" class="main-body-members__user openUserWindow"> MrCrabs <span class="main-body-members__comma"> , </span>
+                                </a>
+                                <a href="#" class="main-body-members__user openUserWindow"> afasf <span class="main-body-members__comma"> , </span>
+                                </a>
+                                <a href="#" class="main-body-members__user openUserWindow"> bsbsd <span class="main-body-members__comma"> , </span>
+                                </a>
+                                <a href="#" class="main-body-members__user openUserWindow"> Mfgfsg <span class="main-body-members__comma"> , </span>
+                                </a>
+                                <a href="#" class="main-body-members__user openUserWindow"> Mgsgabs <span class="main-body-members__comma"> , </span>
+                                </a>
+                                <a href="#" class="main-body-members__user openUserWindow"> MrCgsgrabs <span class="main-body-members__comma"> , </span>
+                                </a>
+                                <a href="#" class="main-body-members__user openUserWindow"> gabs <span class="main-body-members__comma"> , </span>
+                                </a>
+                                <a href="#" class="main-body-members__user openUserWindow"> MrCrabs <span class="main-body-members__comma"> , </span>
+                                </a>
+                                <a href="#" class="main-body-members__user openUserWindow"> afasf <span class="main-body-members__comma"> , </span>
+                                </a>
+                                <a href="#" class="main-body-members__user openUserWindow"> bsbsd <span class="main-body-members__comma"> , </span>
+                                </a>
+                                <a href="#" class="main-body-members__user openUserWindow"> Mfgfsg <span class="main-body-members__comma"> , </span>
+                                </a>
+                                <a href="#" class="main-body-members__user-not-register openUserWindow"> Mgsgabs <span class="main-body-members__comma">
+                                        , </span>
+                                </a>
+                                <a href="#" class="main-body-members__user openUserWindow"> MrCgsgrabs <span class="main-body-members__comma"> , </span>
+                                </a>
+                                <a href="#" class="main-body-members__user openUserWindow"> gabs <span class="main-body-members__comma"> , </span>
+                                </a>
+                                <a href="#" class="main-body-members__user openUserWindow"> MrCrabs <span class="main-body-members__comma"> , </span>
+                                </a>
+                                <a href="#" class="main-body-members__user-not-register openUserWindow"> afasf <span class="main-body-members__comma"> ,
+                                    </span>
+                                </a>
+                                <a href="#" class="main-body-members__user openUserWindow"> bsbsd <span class="main-body-members__comma"> , </span>
+                                </a>
+                                <a href="#" class="main-body-members__user openUserWindow"> Mfgfsg <span class="main-body-members__comma"> , </span>
+                                </a>
+                                <a href="#" class="main-body-members__user openUserWindow"> Mgsgabs <span class="main-body-members__comma"> , </span>
+                                </a>
+                                <a href="#" class="main-body-members__user openUserWindow"> MrCgsgrabs <span class="main-body-members__comma"> , </span>
+                                </a>
+                                <a href="#" class="main-body-members__user openUserWindow"> gabs <span class="main-body-members__comma"> , </span>
+                                </a>
+                                <a href="#" class="main-body-members__user-not-register openUserWindow"> MrCrabs <span class="main-body-members__comma">
+                                        , </span>
+                                </a>
+                                <a href="#" class="main-body-members__user openUserWindow"> afasf <span class="main-body-members__comma"> , </span>
+                                </a>
+                                <a href="#" class="main-body-members__user openUserWindow"> bsbsd <span class="main-body-members__comma"> , </span>
+                                </a>
+                                <a href="#" class="main-body-members__user openUserWindow"> Mfgfsg <span class="main-body-members__comma"> , </span>
+                                </a>
+                                <a href="#" class="main-body-members__user openUserWindow"> Mgsgabs <span class="main-body-members__comma"> , </span>
+                                </a>
+                                <a href="#" class="main-body-members__user openUserWindow"> MrCgsgrabs <span class="main-body-members__comma"> , </span>
+                                </a>
+                                <a href="#" class="main-body-members__user-not-register openUserWindow"> gabs <span class="main-body-members__comma"> ,
+                                    </span>
+                                </a>
+                                <a href="#" class="main-body-members__user openUserWindow"> MrCrabs <span class="main-body-members__comma"> , </span>
+                                </a>
+                                <a href="#" class="main-body-members__user-not-register openUserWindow"> afasf <span class="main-body-members__comma"> ,
+                                    </span>
+                                </a>
+                                <a href="#" class="main-body-members__user openUserWindow"> bsbsd <span class="main-body-members__comma"> , </span>
+                                </a>
+                                <a href="#" class="main-body-members__user openUserWindow"> Mfgfsg <span class="main-body-members__comma"> , </span>
+                                </a>
+                                <a href="#" class="main-body-members__user openUserWindow"> Mgsgabs <span class="main-body-members__comma"> , </span>
+                                </a>
+                                <a href="#" class="main-body-members__user openUserWindow"> MrCgsgrabs <span class="main-body-members__comma"> , </span>
+                                </a>
+                                <a href="#" class="main-body-members__user openUserWindow"> gabs
+                                </a>
+                                <br>
+                            </div>
+                            <a href="#" class="main-body-members__user main-body-members__user-more">... and 252 more</a>
+                            
+                        </div>
+
+                        <div class="main-body-members__bottom">
+                            <span>Total: 638 (members: 324, guests: 314)</span>
+                        </div>
+                    </div>
+
+                    <div class="main-body-statistic">
+                    
+                        <div class="main-body-statistic__online">
+                    
+                            <svg class="main-body-statistic__icon" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                                y="0px" viewBox="0 0 433.664 433.664" style="enable-background:new 0 0 433.664 433.664;" xml:space="preserve">
+                                <g>
+                                    <g>
+                                        <g>
+                                            <path d="M258.048,37.658h-82.944c-8.483,0-15.36,6.877-15.36,15.36v327.526c0,8.483,6.877,15.36,15.36,15.36h82.944
+                            				c8.483,0,15.36-6.877,15.36-15.36V53.018C273.408,44.534,266.531,37.658,258.048,37.658z" />
+                                            <path d="M418.304,228.634H335.36c-8.483,0-15.36,6.877-15.36,15.36v136.653c0,8.483,6.877,15.36,15.36,15.36h82.944
+                            				c8.483,0,15.36-6.877,15.36-15.36V243.994C433.664,235.51,426.787,228.634,418.304,228.634z" />
+                                            <path d="M98.304,160.026H15.36c-8.483,0-15.36,6.877-15.36,15.36v205.056c0,8.483,6.877,15.36,15.36,15.36h82.944
+                            				c8.483,0,15.36-6.877,15.36-15.36V175.386C113.664,166.903,106.787,160.026,98.304,160.026z" />
+                                        </g>
+                                    </g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                                <g>
+                                </g>
+                            </svg>
+
+                    
+                            <a href="#" class="main-body-statistic__online-link">Forum statistics</a>
+  
+                        </div>
+
+                        <div class="main-body-statistic__stats">
+                            <div class="main-body-statistic__threads">
+                            
+                                <div class="main-body-statistic__name"> Threads: </div>
+                                <div class="main-body-statistic__number">29,473</div>
+                            
+                            </div>
+                            
+                            <div class="main-body-statistic__threads">
+                            
+                                <div class="main-body-statistic__name"> Messages: </div>
+                                <div class="main-body-statistic__number">257,577</div>
+                            
+                            </div>
+                            
+                            <div class="main-body-statistic__threads">
+                            
+                                <div class="main-body-statistic__name">Members: </div>
+                                <div class="main-body-statistic__number">366,391</div>
+                            
+                            </div>
+                            
+                            <div  class="main-body-statistic__threads">
+                            
+                                <div class="main-body-statistic__name"> Latest member: </div>
+
+                                   
+
+                                    <div title="#title_user" class="modal-user ">
+                                        <a href="#" class="main-body-statistic__user">agga</a> 
+                                    </div>
+                                    
+                                    
+
+                                </div>
+                            </div>
+
+                        </div>
+                        
+                    </div>
+
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-container">
+    
+            <div class="footer-copyright">
+                Copyright © 2021 Onetap. All rights reserved.
+            </div>
+    
+            <div class="footer-links">
+                <a href="#" class="footer__link footer__contact">contact use</a>
+                <a href="#" class="footer__link footer__terms"> trems of use</a>
+                <a href="#" class="footer__link footer__policy">privaty policy</a>
+                <a href="#top" class="footer__link footer__top">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-arrow-up" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- <a href="" title="#title" class="modal-user">Наведите мышку</a> -->
+    
+    <div class="modal-content">
+
+        <div class="modal-top">
+        
+        
+            <img class="modal-top__avatar" src="img/user-avatars/1.jpg" alt="#">
+        
+        
+            <div class="modal-top__info">
+                <a href="#" class="modal-top__name"> Username </a>
+                <div class="modal-top__role"> subscriber </div>
+                <div class="modal-top__joined"> Joined: <span class="modal-top__date"> Nov 14, 2018</span></div>
+                <div class="modal-top__last-seen"> Last seen: <span class="modal-top__date"> Today at 8.18 PM</span></div>
+            </div>
+        
+        </div>
+        
+        <div class="modal-bottom">
+        
+            <div class="modal-bottom-messages">
+                <div class="modal-bottom__messages">Messages</div>
+                <div class="modal-bottom__number">45</div>
+            </div>
+        
+            <div class="modal-bottom-reactions">
+                <div class="modal-bottom__reaction-score">Reaction score</div>
+                <div class="modal-bottom__number">31</div>
+            </div>
+        
+        </div>
+
+    </div>
+
+    <div class="modal-content">
+    
+        <div class="modal-top">
+    
+    
+            <img class="modal-top__avatar" src="img/user-avatars/1.jpg" alt="#">
+    
+    
+            <div class="modal-top__info">
+                <a href="#" class="modal-top__name"> Username </a>
+                <div class="modal-top__role"> subscriber </div>
+                <div class="modal-top__joined"> Joined: <span class="modal-top__date"> Nov 14, 2018</span></div>
+                <div class="modal-top__last-seen"> Last seen: <span class="modal-top__date"> Today at 8.18 PM</span></div>
+            </div>
+    
+        </div>
+    
+        <div class="modal-bottom">
+    
+            <div class="modal-bottom-messages">
+                <div class="modal-bottom__messages">Messages</div>
+                <div class="modal-bottom__number">45</div>
+            </div>
+    
+            <div class="modal-bottom-reactions">
+                <div class="modal-bottom__reaction-score">Reaction score</div>
+                <div class="modal-bottom__number">31</div>
+            </div>
+    
+        </div>
+    
+    </div>
+
+    <div class="modal-content">
+    
+        <div class="modal-top">
+    
+    
+            <img class="modal-top__avatar" src="img/user-avatars/1.jpg" alt="#">
+    
+    
+            <div class="modal-top__info">
+                <a href="#" class="modal-top__name"> Username </a>
+                <div class="modal-top__role"> subscriber </div>
+                <div class="modal-top__joined"> Joined: <span class="modal-top__date"> Nov 14, 2018</span></div>
+                <div class="modal-top__last-seen"> Last seen: <span class="modal-top__date"> Today at 8.18 PM</span></div>
+            </div>
+    
+        </div>
+    
+        <div class="modal-bottom">
+    
+            <div class="modal-bottom-messages">
+                <div class="modal-bottom__messages">Messages</div>
+                <div class="modal-bottom__number">45</div>
+            </div>
+    
+            <div class="modal-bottom-reactions">
+                <div class="modal-bottom__reaction-score">Reaction score</div>
+                <div class="modal-bottom__number">31</div>
+            </div>
+    
+        </div>
+    
+    </div>
+
+    <div class="modal-content">
+    
+        <div class="modal-top">
+    
+    
+            <img class="modal-top__avatar" src="img/user-avatars/1.jpg" alt="#">
+    
+    
+            <div class="modal-top__info">
+                <a href="#" class="modal-top__name"> Username </a>
+                <div class="modal-top__role"> subscriber </div>
+                <div class="modal-top__joined"> Joined: <span class="modal-top__date"> Nov 14, 2018</span></div>
+                <div class="modal-top__last-seen"> Last seen: <span class="modal-top__date"> Today at 8.18 PM</span></div>
+            </div>
+    
+        </div>
+    
+        <div class="modal-bottom">
+    
+            <div class="modal-bottom-messages">
+                <div class="modal-bottom__messages">Messages</div>
+                <div class="modal-bottom__number">45</div>
+            </div>
+    
+            <div class="modal-bottom-reactions">
+                <div class="modal-bottom__reaction-score">Reaction score</div>
+                <div class="modal-bottom__number">31</div>
+            </div>
+    
+        </div>
+    
+    </div>
+
+    <div class="modal-content">
+    
+        <div class="modal-top">
+    
+    
+            <img class="modal-top__avatar" src="img/user-avatars/1.jpg" alt="#">
+    
+    
+            <div class="modal-top__info">
+                <a href="#" class="modal-top__name"> Username </a>
+                <div class="modal-top__role"> subscriber </div>
+                <div class="modal-top__joined"> Joined: <span class="modal-top__date"> Nov 14, 2018</span></div>
+                <div class="modal-top__last-seen"> Last seen: <span class="modal-top__date"> Today at 8.18 PM</span></div>
+            </div>
+    
+        </div>
+    
+        <div class="modal-bottom">
+    
+            <div class="modal-bottom-messages">
+                <div class="modal-bottom__messages">Messages</div>
+                <div class="modal-bottom__number">45</div>
+            </div>
+    
+            <div class="modal-bottom-reactions">
+                <div class="modal-bottom__reaction-score">Reaction score</div>
+                <div class="modal-bottom__number">31</div>
+            </div>
+    
+        </div>
+    
+    </div>
+    
+    <div class="modal-content">
+    
+        <div class="modal-top">
+    
+    
+            <img class="modal-top__avatar" src="img/user-avatars/1.jpg" alt="#">
+    
+    
+            <div class="modal-top__info">
+                <a href="#" class="modal-top__name"> Username </a>
+                <div class="modal-top__role"> subscriber </div>
+                <div class="modal-top__joined"> Joined: <span class="modal-top__date"> Nov 14, 2018</span></div>
+                <div class="modal-top__last-seen"> Last seen: <span class="modal-top__date"> Today at 8.18 PM</span></div>
+            </div>
+    
+        </div>
+    
+        <div class="modal-bottom">
+    
+            <div class="modal-bottom-messages">
+                <div class="modal-bottom__messages">Messages</div>
+                <div class="modal-bottom__number">45</div>
+            </div>
+    
+            <div class="modal-bottom-reactions">
+                <div class="modal-bottom__reaction-score">Reaction score</div>
+                <div class="modal-bottom__number">31</div>
+            </div>
+    
+        </div>
+    
+    </div>
+
+    <!-- Tippe.JS + Pooper.JS -->
+    
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+
+    
+    <script type="text/javascript">
+
+        tippy('.modal-user', {
+            // theme: 'test-theme',
+            // выбор файла, который будет открываться при наведении
+            content: document.querySelector('.modal-content'),
+            // делает окно инерактивным (можно тыкать внутри)
+            interactive: true
+        });
+        
+        tippy('.modal-user-1', {
+                // theme: 'test-theme',
+                // выбор файла, который будет открываться при наведении
+                content: document.querySelector('.modal-content'),
+                // делает окно инерактивным (можно тыкать внутри)
+                interactive: true
+            });
+
+        tippy('.modal-user-2', {
+            // theme: 'test-theme',
+            // выбор файла, который будет открываться при наведении
+            content: document.querySelector('.modal-content'),
+            // делает окно инерактивным (можно тыкать внутри)
+            interactive: true
+        });
+
+        tippy('.modal-user-3', {
+            // theme: 'test-theme',
+            // выбор файла, который будет открываться при наведении
+            content: document.querySelector('.modal-content'),
+            // делает окно инерактивным (можно тыкать внутри)
+            interactive: true
+        });
+
+        tippy('.modal-user-4', {
+                // theme: 'test-theme',
+                // выбор файла, который будет открываться при наведении
+                content: document.querySelector('.modal-content'),
+                // делает окно инерактивным (можно тыкать внутри)
+                interactive: true
+            });
+        tippy('.modal-user-5', {
+                // theme: 'test-theme',
+                // выбор файла, который будет открываться при наведении
+                content: document.querySelector('.modal-content'),
+                // делает окно инерактивным (можно тыкать внутри)
+                interactive: true
+            });
+
+    </script>
+
+</body>
+</html>

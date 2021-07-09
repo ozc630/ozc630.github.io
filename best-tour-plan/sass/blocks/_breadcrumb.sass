@@ -1,0 +1,19 @@
+.breadcrumb-container
+    max-width: 1110px
+    margin: auto
+    padding-top: 18px
+    padding-bottom: 18px
+
+.breadcrumb-link
+    text-decoration: none
+    +font-mulish
+    font-style: normal
+    font-weight: normal
+    font-size: 10px
+    line-height: 13px
+    color: $background-color
+    &:not(:last-child)
+        &::after
+            content: "/"
+            margin-right: 4px
+            margin-left: 4px

@@ -1,0 +1,78 @@
+.news-letter
+    background-image: url(../img/bc-img.jpg)
+    background-repeat: no-repeat
+    background-position: center
+    position: relative
+    &::before
+        content: ''
+        position: absolute
+        top: 0
+        right: 0
+        bottom: 0
+        left: 0
+        background: rgba(10, 34, 61, 0.8)
+.news-letter-container
+    max-width: 1110px
+    margin: auto
+    padding: 98px 0 87px 0
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+.news-letter-left
+    display: flex
+    flex-direction: column
+    position: relative
+
+.news-lette-subscribe
+    +font-mulish
+    font-style: normal
+    font-weight: 300
+    font-size: 24px
+    line-height: 30px
+    color: #fff
+
+.news-lette-newsletter
+    +font-mulish
+    font-style: normal
+    font-weight: 600
+    font-size: 36px
+    line-height: 45px
+    text-transform: uppercase
+    color: #fff
+.news-letter-input-email
+
+    width: 275px
+    height: 55px
+    background-color: #F5FAFE
+    border: none
+    border-radius: 6px
+    border-top-right-radius: 0px
+    border-bottom-right-radius: 0px
+    padding: 20px 18px
+    outline: 0
+    outline-offset: 0
+    font-size: 12px
+    color: #333333
+    +font-mulish
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
+.news-letter-email
+    display: flex
+    flex-direction: row
+.news-letter-send
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 65px
+    height: 55px
+    background-color: $search-icon
+    border-bottom-right-radius: 6px
+    border-top-right-radius: 6px
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
+    text-decoration: none
+    color: #fff
+    +font-mulish
+    font-style: normal
+    font-weight: bold
+    font-size: 12px
+    line-height: 15px

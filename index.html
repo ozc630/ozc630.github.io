@@ -4,19 +4,252 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ozc main page</title>
-</head>
-<body>
-    <a href="landingpage-BW-master/index.html"> landingpage-BW-master</a>
+    <title>main page</title>
 
-    <br>
-    <br>
-    <a href="best-tour-plan/index.html"> best-tour-plan </a>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Festive&display=swap" rel="stylesheet">
+</head>      
+<body>
     
-    <br>
-    <br>
-    <a href="games-for-dead-inside/index.html"> games-for-dead-inside </a>
+    <!-- Header -->
+
+    <header class="header">
+        <div class="container header-container">
+            <span class="header-text">
+                main portfolio
+            </span>
+            <div class="header-contacts">
+
+                <a href="https://vk.com/id297906667" class="header-contacts__vk">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="vk" class="svg-inline--fa fa-vk fa-w-18"
+                        role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                        <path fill="currentColor"
+                            d="M545 117.7c3.7-12.5 0-21.7-17.8-21.7h-58.9c-15 0-21.9 7.9-25.6 16.7 0 0-30 73.1-72.4 120.5-13.7 13.7-20 18.1-27.5 18.1-3.7 0-9.4-4.4-9.4-16.9V117.7c0-15-4.2-21.7-16.6-21.7h-92.6c-9.4 0-15 7-15 13.5 0 14.2 21.2 17.5 23.4 57.5v86.8c0 19-3.4 22.5-10.9 22.5-20 0-68.6-73.4-97.4-157.4-5.8-16.3-11.5-22.9-26.6-22.9H38.8c-16.8 0-20.2 7.9-20.2 16.7 0 15.6 20 93.1 93.1 195.5C160.4 378.1 229 416 291.4 416c37.5 0 42.1-8.4 42.1-22.9 0-66.8-3.4-73.1 15.4-73.1 8.7 0 23.7 4.4 58.7 38.1 40 40 46.6 57.9 69 57.9h58.9c16.8 0 25.3-8.4 20.4-25-11.2-34.9-86.9-106.7-90.3-111.5-8.7-11.2-6.2-16.2 0-26.2.1-.1 72-101.3 79.4-135.6z">
+                        </path>
+                    </svg>
+                </a>
+
+                <a href="#" class="header-contacts__tg">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="telegram-plane"
+                        class="svg-inline--fa fa-telegram-plane fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 448 512">
+                        <path fill="currentColor"
+                            d="M446.7 98.6l-67.6 318.8c-5.1 22.5-18.4 28.1-37.3 17.5l-103-75.9-49.7 47.8c-5.5 5.5-10.1 10.1-20.7 10.1l7.4-104.9 190.9-172.5c8.3-7.4-1.8-11.5-12.9-4.1L117.8 284 16.2 252.2c-22.1-6.9-22.5-22.1 4.6-32.7L418.2 66.4c18.4-6.9 34.5 4.1 28.5 32.2z">
+                        </path>
+                    </svg>
+                </a>
+
+                <a href="#" class="header-contacts__inst">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="instagram"
+                        class="svg-inline--fa fa-instagram fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <path fill="currentColor"
+                            d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z">
+                        </path>
+                    </svg>
+                </a>
+
+            </div>
+        </div>
+    </header>
+
+    <!-- body-1-->
+
+    <section class="body-1">
+        
+        <div class="container body-container" >
+
+            <div class="body-info">
+                    <!-- body left -->
+                <div class="body-left">
+                    <div class="body-left__top-image"> </div>
+
+                    <div class="body-left__bottom-images">
+                        <div class="body-left__bottom-image-left" > </div>
+                        <div class="body-left__bottom-image-right" > </div>
+                    </div>
+                </div>
+                <!-- body right -->
+                <div class="body-right">
+                    <h2 class="body__name"> Best tour plan</h2>
+
+                    <div class="body-right__info"> Пример интернет-магазина по оформлению места отдыха. Одностраничный сайт включает 
+                        в себя 2 слайдера, форму отправки сообщений и заявок на Вашу почту. Также сайт является адаптивным под 3 размера 
+                        экранов, что обеспечивает хороший просмтр страницы как с ПК-версии, так и с мобильной. 
+                    </div>
+                </div>
+
+                <div class="body__buttons">
+                    <a href="best-tour-plan/index.html" class="btn btn-top body__buttons-site">Посетить сайт</a>
+                    <a href="#contacts"class="btn btn-top body__buttons-author"> Связаться с верстальщиком</a>
+                    <a href="#"class="btn btn-top body__buttons-main"> На главную </a>
+                </div>
+
+                
+            </div>
+            
+        </div>
+
+    </section>
+
+    <!-- body-2 -->
+
+    <section class="body-2">
+        <div class="container body-container">
+    
+            <div class="body-info">
+                <!-- body left -->
+                <div class="body-left">
+                    <div class="body-left__top-image-2"> </div>
+    
+                    <div class="body-left__bottom-images">
+                        <div class="body-left__bottom-image-left-2"> </div>
+                        <div class="body-left__bottom-image-right-2"> </div>
+                    </div>
+                </div>
+                <!-- body right -->
+                <div class="body-right">
+                    <h2 class="body__name"> Onetap remake</h2>
+    
+                    <div class="body-right__info"> Пример сайта какого-либо продукта. Двустраничный сайт
+                        включает в себя основную страницу и страницу форума, 2 слайдера, которые обновляются после оперделенного времени
+                        (10 и 5 секунд), tooltip-окна, содержащие информацию о пользователе,
+                        оботражается при наведении как на аватар, так и имя пользователя. В данном случае не имеется адаптивной версии, 
+                        но реализация данной данной функции возможна в любое время.
+                    </div>
+                </div>
+    
+                <div class="body__buttons">
+                    <a href="onetap-remake/index.html" class="btn btn-dark body__buttons-site">Посетить сайт</a>
+                    <a href="#contacts" class="btn btn-dark body__buttons-author"> Связаться с верстальщиком</a>
+                    <a href="#" class="btn btn-dark body__buttons-main"> На главную </a>
+                </div>
     
     
+            </div>
+    
+        </div>
+    </section>
+
+    <!-- body-3 (1) -->
+    
+    <section class="body-3">
+    
+        <div class="container body-container">
+    
+            <div class="body-info">
+                <!-- body left -->
+                <div class="body-left">
+                    <div class="body-left__top-image-3"> </div>
+                    
+                    <div class="body-left__bottom-images">
+                        <div class="body-left__bottom-image-left-3"> </div>
+                        <div class="body-left__bottom-image-right-3"> </div>
+                    </div>
+                </div>
+                <!-- body right -->
+                <div class="body-right">
+                    <h2 class="body__name"> bw master</h2>
+    
+                    <div class="body-right__info"> arqo[jroqjwi  owper фроал оф vai auiiue у quqp у qpo]
+                    </div>
+                </div>
+    
+                <div class="body__buttons">
+                    <a href="landingpage-BW-master/index.html" class="btn btn-top body__buttons-site">Посетить сайт</a>
+                    <a href="#contacts" class="btn btn-top body__buttons-author"> Связаться с верстальщиком</a>
+                    <a href="#" class="btn btn-top body__buttons-main"> На главную </a>
+                </div>
+    
+    
+            </div>
+    
+        </div>
+    
+    </section>
+
+    <div class="footer" id="contacts">
+
+        <div class="container">
+            <h2 class="footer-contacts"> Contacts</h2>
+
+            <!-- <span class="footer-contacts__text">  Большую часть времени провожу именно во ВКонктакте, ответ там будет наиболее быстрым, но , в любом случае, ответить смогу в любом месте</span> -->
+
+            <div class="footer-contacts-cards">
+
+                <a href="#" class="footer-contacts__card">
+
+                    <div class="footer-contacts-icon">
+                        <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="vk" class="svg-inline--fa fa-vk fa-w-18"
+                            role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                            <path fill="currentColor"
+                                d="M545 117.7c3.7-12.5 0-21.7-17.8-21.7h-58.9c-15 0-21.9 7.9-25.6 16.7 0 0-30 73.1-72.4 120.5-13.7 13.7-20 18.1-27.5 18.1-3.7 0-9.4-4.4-9.4-16.9V117.7c0-15-4.2-21.7-16.6-21.7h-92.6c-9.4 0-15 7-15 13.5 0 14.2 21.2 17.5 23.4 57.5v86.8c0 19-3.4 22.5-10.9 22.5-20 0-68.6-73.4-97.4-157.4-5.8-16.3-11.5-22.9-26.6-22.9H38.8c-16.8 0-20.2 7.9-20.2 16.7 0 15.6 20 93.1 93.1 195.5C160.4 378.1 229 416 291.4 416c37.5 0 42.1-8.4 42.1-22.9 0-66.8-3.4-73.1 15.4-73.1 8.7 0 23.7 4.4 58.7 38.1 40 40 46.6 57.9 69 57.9h58.9c16.8 0 25.3-8.4 20.4-25-11.2-34.9-86.9-106.7-90.3-111.5-8.7-11.2-6.2-16.2 0-26.2.1-.1 72-101.3 79.4-135.6z">
+                            </path>
+                        </svg>
+                    </div>
+
+                    <span>vkontakte</span>
+                </a>
+
+                <a href="#" class="footer-contacts__card">
+                    
+                    <div class="footer-contacts-icon">
+                        <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="telegram-plane"
+                            class="svg-inline--fa fa-telegram-plane fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 448 512">
+                            <path fill="currentColor"
+                                d="M446.7 98.6l-67.6 318.8c-5.1 22.5-18.4 28.1-37.3 17.5l-103-75.9-49.7 47.8c-5.5 5.5-10.1 10.1-20.7 10.1l7.4-104.9 190.9-172.5c8.3-7.4-1.8-11.5-12.9-4.1L117.8 284 16.2 252.2c-22.1-6.9-22.5-22.1 4.6-32.7L418.2 66.4c18.4-6.9 34.5 4.1 28.5 32.2z">
+                            </path>
+                        </svg>
+                    </div>
+                
+                    <span> telegram</span>
+                </a>
+
+                <a href="#" class="footer-contacts__card">
+
+                    <div class="footer-contacts-icon">
+                        <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="instagram"
+                            class="svg-inline--fa fa-instagram fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                            <path fill="currentColor"
+                                d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z">
+                            </path>
+                        </svg>
+                    </div>
+                
+                    <span> instagram</span>
+                </a>
+
+                <a href="#" class="footer-contacts__card">
+                
+                    <div class="footer-contacts-icon">
+                        <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="envelope"
+                            class="svg-inline--fa fa-envelope fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path fill="currentColor"
+                                d="M464 64H48C21.49 64 0 85.49 0 112v288c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V112c0-26.51-21.49-48-48-48zm0 48v40.805c-22.422 18.259-58.168 46.651-134.587 106.49-16.841 13.247-50.201 45.072-73.413 44.701-23.208.375-56.579-31.459-73.413-44.701C106.18 199.465 70.425 171.067 48 152.805V112h416zM48 400V214.398c22.914 18.251 55.409 43.862 104.938 82.646 21.857 17.205 60.134 55.186 103.062 54.955 42.717.231 80.509-37.199 103.053-54.947 49.528-38.783 82.032-64.401 104.947-82.653V400H48z">
+                            </path>
+                        </svg>
+                    </div>
+                
+                    <span> Gmail</span>
+                </a>
+            </div>
+        </div>
+        
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
 </body>
 </html>

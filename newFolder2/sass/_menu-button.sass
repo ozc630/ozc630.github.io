@@ -1,0 +1,69 @@
+.menu-button
+    position: fixed
+    z-index: 20
+    width: 40px
+    height: 40px
+    background-color: #212529
+    border-radius: 35%
+    position: fixed
+    top: 10px
+    left: 10px
+    border: none
+    box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.20)
+    display: flex
+    align-items: center
+    transition: 300ms
+    &:hover
+        background-color: #111111c0
+        transition: 300ms
+
+    &__line
+        opacity: 1
+        background-color: #eeeeee77
+        margin: 6px auto
+        border: 1px solid #eeeeee77
+        width: 20px
+    &__close
+        box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.20)
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 40px
+        height: 40px
+        border-radius: 35%
+        position: absolute
+        right: 10px
+        top: 10px
+        transition: 300ms
+        &:hover
+            background-color: #111111c0
+            transition: 300ms
+        & svg
+            color: #fff
+            min-height: 30px
+            min-width: 30px
+.offcanvas-body
+    color: #fff
+    background: #000 url(/img/main/bg-main.png )
+    padding: 20px
+.nav-menu
+    display: flex
+    align-items: center
+    flex-direction: column
+    width: 100%
+    font-size: 20px
+    font-weight: 400
+    text-transform: uppercase
+    font-family: 'ProximaNova-Light'
+    &__item
+        padding: 15px 0
+        display: flex
+        justify-content: center
+        text-decoration: none
+        width: 100%
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2)
+        color: #fff
+        &:hover
+            color: #ffffffbe
+        &-last
+            border: none

@@ -1204,5 +1204,21 @@ img {
   .delivery {
     font-size: 14px;
   }
+  .feedback-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .feedback__text {
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  .feedback__link {
+    margin: 0;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

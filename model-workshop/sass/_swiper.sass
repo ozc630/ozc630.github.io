@@ -1,0 +1,103 @@
+.mySwiper
+    width: 100%
+    height: 100%
+    overflow: hidden
+
+.swiper-slide
+    text-align: center
+    font-size: 18px
+    background: #fff
+
+        /* Center slide text vertically */
+    display: -webkit-box
+    display: -ms-flexbox
+    display: -webkit-flex
+    display: flex
+    -webkit-box-pack: center
+    -ms-flex-pack: center
+    -webkit-justify-content: center
+    justify-content: center
+    -webkit-box-align: center
+    -ms-flex-align: center
+    -webkit-align-items: center
+    align-items: center
+
+    & img
+        display: block
+        width: 100%
+        height: 100%
+        object-fit: cover
+
+.swiper
+    &-card
+        padding-bottom: 30px
+        &-image
+            padding-top: 20px
+            margin: auto
+            width: 100%
+            height: 210px
+            display: flex
+            align-items: center
+
+        &__image
+            width: 100%
+            height: 100%
+            display: flex
+            justify-content: center
+            object-fit: cover
+
+        &__title
+            margin: 0 auto
+            margin-top: 20px
+            margin-bottom: 17px
+            max-width: 234px
+            font-family: 'ProximaNova-Regular'
+            font-size: 15px
+            color: #000
+            text-align: center
+        &__price
+            margin-bottom: 24px
+            font-family: 'ProximaNova-Bold'
+            font-size: 17px
+            color: #000
+        &__button
+            justify-content: center
+            margin: 0 auto
+            align-items: center
+            display: flex
+            box-shadow: 0 6px 18px 0 rgba(28 ,167,173,0.32)
+            text-transform: uppercase
+            font-family: 'ProximaNova-Bold'
+            border: none
+            transition: background-color 2s
+            background-color: #fff
+            color: #23bac1
+            padding: 18px 55px
+            border: 1px solid #23bac1
+            font-size: 13px
+            text-transform: uppercase
+            font-family: 'ProximaNova-Bold'
+            & span
+                padding-top: 5px
+            & img
+                margin-right: 10px
+            &:hover
+                color: #fff
+                background-color: #23bac1
+
+.slider-button-next
+    top: 50%
+    position: absolute
+    right: 5%
+    background: transparent url(../img/slider-arrow-right.png) 0 0 no-repeat
+    width: 18px
+    height: 30px
+    z-index: 10
+.slider-button-prev
+    top: 50%
+    position: absolute
+    left: 5%
+    background: transparent url(../img/slider-arrow-left.png) 0 0 no-repeat
+    width: 18px
+    height: 30px
+    z-index: 10

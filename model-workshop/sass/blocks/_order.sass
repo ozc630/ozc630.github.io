@@ -1,0 +1,61 @@
+.order
+    background-color: #f9f9f9
+    padding-top: 60px
+    padding-bottom: 50px
+    &-container
+        display: flex
+        justify-content: center
+        flex-direction: column
+    &__title
+        &-underline
+            width: 40px
+            opacity: 1
+            border: 1px solid#23bac1
+            background-color: #23bac1
+            margin-bottom: 30px
+    &__subtitle
+        font-family: 'ProximaNova-Bold'
+        margin-bottom: 30px
+        font-size: 18px
+        color: #000
+        text-align: center
+    &-form
+        display: flex
+        align-items: center
+        justify-content: space-between
+        margin-bottom: 30px
+        &-button
+            padding: 15px 37px
+            box-shadow: 0 6px 18px 0 rgba(28 ,167,173,0.32)
+            background-color: #23bac1
+            color: #fff
+            text-transform: uppercase
+            font-family: 'ProximaNova-Bold'
+            border: none
+            transition: background-color 2s
+            &:hover
+                color: #23bac1
+                background-color: #fff
+        &-input
+            padding: 16px 0
+            width: 25%
+            text-align: center
+            font-size: 13px
+            font-family: 'ProximaNova-Regular'
+            color: #7c7c7c
+            border: 1px solid #e8e8e8
+            -webkit-box-shadow: none
+            box-shadow: none
+            outline: none
+        &-small
+            text-align: center
+            font-family: 'ProximaNova-Regular'
+            font-size: 11px
+            color: #7c7c7c
+            & div
+                cursor: pointer
+                text-decoration: underline
+                transition: 100ms
+                &:hover
+                    color: #00d1f9
+                    transition: 100ms

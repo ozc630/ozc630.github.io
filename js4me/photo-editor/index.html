@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>photo-editor </title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <h2> Photo-editor</h2>
+    <input id="loadFile" type="file">
+    <br><br>
+    
+    <div class="photo-container">
+        <div class="photo">
+            <img class="img" src="photo.jpeg" alt="">
+        </div>
+        
+        <br>
+        
+        <div class="filter">
+            <label for="contrast"> contrast </label>
+            <br>
+            <input id="contrast" type="range" name="contrast" min="0" max="100" value="10">
+            <br> <br>
+            <label for="sepia"> sepia </label>
+            <br>
+            <input id="sepia" type="range" name="sepia" min="0" max="100" value="0">
+            <br> <br>
+
+            <button id="reset"> reset</button>
+        
+        </div>
+    </div>
+    
+<script src="main.js"></script>
+</body>
+</html>

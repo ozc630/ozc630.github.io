@@ -82,9 +82,3 @@ function filter() {
         input.textContent = input.textContent.substring(0, input.textContent.length - 2)
     }
 }
-window.addEventListener("keypress", (e) => {
-    // console.log(e.keyCode)
-    if (e.keyCode == 49) {
-        createNumber(one, "1")
-    }
-})
